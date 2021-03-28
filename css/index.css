@@ -1,0 +1,23 @@
+body {
+  background-image: url("../img/banner.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+#banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+}
+
+.presentation{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #634B4A;
+  padding: 50px;
+}
