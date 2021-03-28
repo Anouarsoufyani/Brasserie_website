@@ -1,4 +1,9 @@
 @font-face {
+	font-family: Alvaro;
+	src: url(Alvaro.otf)
+}
+
+@font-face {
 	font-family: "Bodoni Bold";
 	src: url(BodoniBold.ttf)
 }
