@@ -1,18 +1,36 @@
 header {
 	height: 50px;
-	background-color: red
+	background-color: #000
 }
 
 .logo {
+	width: 40px;
+	height: 40px;
+	margin: 5px;
+	position: absolute;
+	border-radius: 50%;
+	background-color: #fff
+}
+
+.open_nav {
+	display: none;
 	width: 50px;
 	height: 50px;
-	float: left;
-	background-color: orange
+	float: right;
+	background: url(../img/menu.svg) center no-repeat;
+	background-size: 30px;
+	-webkit-filter: invert(1);
+	filter: invert(1)
 }
+
+.open_nav:hover ~ nav,
+nav:hover {display: block}
 
 nav {
 	height: 50px;
-	float: right
+	right: 0;
+	position: absolute;
+	background-color: #000
 }
 
 nav a {
@@ -21,7 +39,22 @@ nav a {
 	line-height: 40px;
 	margin: 5px;
 	padding: 0 10px;
-	background-color: #fff;
+	background-color: blue;
+	color: #fff;
 	text-decoration: none;
 	font-size: 20px
+}
+
+@media screen and (max-width: 600px) {
+	.logo {left: calc(50% - 20px)}
+	.open_nav {display: block}
+	nav {
+		display: none;
+		height: 200px;
+		top: 50px;
+	}
+	nav a {
+		display: block;
+		margin-bottom: 10px;
+	}
 }
