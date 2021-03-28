@@ -1,12 +1,13 @@
 .banner {
 	width: 100%;
-	background: darkblue url(../img/banner.jpg) fixed no-repeat;
+	background: yellow url(../img/banner.jpg) fixed no-repeat;
 	background-size: 100%
 }
 
 .banner .hidden {
+	display: block;
 	visibility: hidden;
-	width: 100%;
+	width: 100%
 }
 
 .banner .banner-title {
@@ -19,8 +20,17 @@
 	top: 33vh;
 	position: absolute;
 	color: #fff;
-	text-align: center;
+	text-align: center
+}
+
+.title {
 	font-size: 60px;
+	font-weight: normal;
+	font-family: "Bodoni Bold"
+}
+
+.subtitle {
+	font-size: 40px;
 	font-weight: normal;
 	font-family: "Bodoni Bold"
 }
