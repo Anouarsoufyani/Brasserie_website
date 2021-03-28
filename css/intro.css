@@ -11,12 +11,9 @@
 	/*634b4a*/
 }
 
-.image-workshop {
+.workshop {
 	width: 50%;
 }
 
-@media screen and (max-width: 1000px) {
-	.image-worskhop {
-		display: none !important
-	}
-}
+@media screen and (max-width: 1000px) {.workshop {width: 75% !important}}
+@media screen and (max-width: 750px) {.workshop {width: 100% !important}}
