@@ -10,3 +10,13 @@
 	font-size: 20px;
 	/*634b4a*/
 }
+
+.image-workshop {
+	width: 50%;
+}
+
+@media screen and (max-width: 1000px) {
+	.image-worskhop {
+		display: none !important
+	}
+}
