@@ -9,8 +9,9 @@ header {
 	width: 60px;
 	height: 60px;
 	position: absolute;
-	background: rgba(0, 0, 0, 0.5) url(../img/logo.png) center no-repeat;
-	background-size: 160px
+	background-color: #fff;
+	/*background: rgba(0, 0, 0, 0.5) url(../img/logo.png) center no-repeat;*/
+	/*background-size: 160px*/
 }
 
 .open_nav {
@@ -84,4 +85,6 @@ nav a:hover:after {width: 100%}
 		display: block;
 		margin-bottom: 10px
 	}
+	.title {font-size: 40px !important}
+	.subtitle {font-size: 30px !important}
 }

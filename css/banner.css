@@ -24,12 +24,14 @@
 }
 
 .title {
+	margin-bottom: 20px;
 	font-size: 60px;
 	font-weight: normal;
 	font-family: "Bodoni Bold"
 }
 
 .subtitle {
+	margin: 20px 0;
 	font-size: 40px;
 	font-weight: normal;
 	font-family: "Bodoni Bold"
