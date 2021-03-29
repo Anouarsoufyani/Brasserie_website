@@ -31,10 +31,12 @@
 				banner.style.height = calc_banner_height() + "px";
 				this.onresize = function() {banner.style.height = calc_banner_height() + "px"}
 				this.onscroll = function() {
-					if (this.scrollY >= calc_banner_height()) header.style.backgroundColor = "#634b4a";
-					else {
-						header.style.backgroundColor = "transparent";
+					if (this.scrollY >= calc_banner_height()) {
+						header.style.backgroundColor = "#634b4a";
 						header.style.borderBottom = "1px solid #fff"
+					} else {
+						header.style.backgroundColor = "transparent";
+						header.style.borderBottom = "none"
 					}
 				}
 			}
@@ -79,7 +81,9 @@
 
 		<footer>
 			<div class="links">
-				Liens
+				<span>yannick.bonnet@free.fr</span>
+				<span>06 68 92 20 80</span>
+				<span><a href="https://www.facebook.com/BrasseriedesEveques" class="fb" title="Facebook"></a></span>
 			</div>
 			<div class="copyright">© 2021 Vedis. Tous droits réservés.</div>
 		</footer>

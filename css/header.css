@@ -15,7 +15,7 @@ header {
 }
 
 .open_nav {
-	display: none;
+	visibility: hidden;
 	width: 60px;
 	height: 60px;
 	float: right;
@@ -27,14 +27,18 @@ header {
 
 .open_nav:hover ~ nav,
 nav:hover {
-	display: block
+	visibility: visible;
+	opacity: 1
 }
 
 nav {
+	visibility: visible;
 	height: 60px;
 	right: 0;
 	position: absolute;
-	background-color: transparent
+	opacity: 1;
+	background-color: transparent;
+	transition: 0.2s
 }
 
 nav a {
@@ -81,11 +85,12 @@ nav a:active {
 
 @media screen and (max-width: 800px) {
 	.logo {left: calc(50% - 30px)}
-	.open_nav {display: block}
+	.open_nav {visibility: visible}
 	nav {
-		display: none;
-		height: 210px;
+		visibility: hidden;
+		height: auto;
 		top: 60px;
+		opacity: 0;
 		background-color: #000
 	}
 	nav a {
