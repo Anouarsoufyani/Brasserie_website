@@ -1,5 +1,7 @@
 body {
 	margin: 0;
 	overflow-x: hidden;
-	background-color: #634b4a
+	background-color: #4f3c3b
 }
+
+/* #4f3c3b = #634b4a with rgba(0, 0, 0, 0.2) */

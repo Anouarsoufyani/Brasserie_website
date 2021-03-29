@@ -1,4 +1,18 @@
 footer {
 	width: 100%;
-	background-color: rgba(0, 0, 0, 0.2)
+	background-color: #4f3c3b;
+	text-align: center;
+	font-family: "Roboto Slab Regular"
+}
+
+footer .links {
+	height: 60px;
+	padding: 10px 0 20px 0;
+	font-size: 20px
+}
+
+footer .copyright {
+	height: 40px;
+	line-height: 40px;
+	font-size: 16px
 }
