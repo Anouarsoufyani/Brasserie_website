@@ -7,12 +7,11 @@ header {
 	background-color: #634b4a
 }
 
-.logo {
-	width: 60px;
-	height: 60px;
-	position: absolute;
-	background: url(../img/logo.png) center no-repeat;
-	background-size: 160px
+.logo {position: absolute}
+
+.logo img {
+	width: 115px;
+	height: 60px
 }
 
 .open_nav {
@@ -79,24 +78,4 @@ nav a:active {
 	-ms-transform: scale(0.9);
 	transform: scale(0.9);
 	transition: 0.1s
-}
-
-
-
-@media screen and (max-width: 800px) {
-	.logo {left: calc(50% - 30px)}
-	.open_nav {visibility: visible}
-	nav {
-		visibility: hidden;
-		height: auto;
-		top: 60px;
-		opacity: 0;
-		background-color: #000
-	}
-	nav a {
-		display: block;
-		margin-bottom: 10px
-	}
-	.title {font-size: 40px !important}
-	.subtitle {font-size: 30px !important}
 }
