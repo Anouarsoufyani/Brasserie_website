@@ -5,7 +5,7 @@
 	justify-content: center;
 	width: 100%;
 	background: url("../img/banner.jpg") fixed no-repeat;
-	background-size: contain;
+	background-size: cover;
 	color: #fff;
 	text-align: center
 }
@@ -16,6 +16,6 @@
 	margin-bottom: 20px;
 	border: 1px solid #fff;
 	border-radius: 50%;
-	background: red url("../img/logo.png");
+	background: url("../img/logo.png");
 	background-size: cover
 }
