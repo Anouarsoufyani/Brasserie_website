@@ -26,8 +26,14 @@
 				this.onresize = function() {banner.style.height = calc_banner_height() + "px"}
 				this.onscroll = function() {
 					var h = calc_banner_height();
-					if (this.scrollY >= h) header.style.backgroundColor = "#634b4a";
-					else header.style.backgroundColor = "transparent"
+					if (this.scrollY >= h) {
+            header.style.backgroundColor = "#634b4a";
+            header.style.borderBottom = "1px solid";
+          }
+					else {
+            header.style.backgroundColor = "transparent"
+            header.style.borderBottom = "none";
+          }
 				}
 
 				document.querySelector("img").load = function() {
@@ -43,7 +49,6 @@
 			<a href="index.html" class="logo" title="La Brasserie des Evêques"></a>
 			<a href="javascript:void(0)" class="open_nav"></a>
 			<nav>
-				<a href="index.html" title="Accueil"><span>ACCUEIL</span></a>
 				<a href="produits.html" title="Nos produits"><span>NOS PRODUITS</span></a>
 				<a href="atelier.html" title="Faites votre bière"><span>FAITES VOTRE BIERE</span></a>
 				<a href="contact.html" title="Nous contacter"><span>NOUS CONTACTER</span></a>
