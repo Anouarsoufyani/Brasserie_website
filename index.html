@@ -4,6 +4,12 @@
 
   <head>
 		<meta charset="utf-8">
+		<meta http-equiv="content-language" content="fr-FR">
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+		<meta name="description" content="La Brasserie des Evêques à villeneuve lès Maguelone">
+		<meta name="keywords" content="brasserie, évêque, bière, artisanal, villeneuve, maguelone">
+		<meta name="author" content="Vedis">
+		<meta name="theme-color" content="#4f3c3b">
 		<link rel="stylesheet" type="text/css" href="fonts/fonts.css">
 		<link rel="stylesheet" type="text/css" href="css/banner.css">
 		<link rel="stylesheet" type="text/css" href="css/footer.css">
@@ -25,13 +31,8 @@
 				banner.style.height = calc_banner_height() + "px";
 				this.onresize = function() {banner.style.height = calc_banner_height() + "px"}
 				this.onscroll = function() {
-					var h = calc_banner_height();
-					if (this.scrollY >= h) header.style.backgroundColor = "#634b4a";
+					if (this.scrollY >= calc_banner_height()) header.style.backgroundColor = "#634b4a";
 					else header.style.backgroundColor = "transparent"
-				}
-
-				document.querySelector("img").load = function() {
-					console.log("ok")
 				}
 			}
 		</script>
@@ -52,7 +53,7 @@
 
 		<main>
 			<section class="banner">
-				<!-- this image sets the banner height and is not displayed -->
+				<!-- this image sets the banner height -->
 				<img src="img/banner.jpg" class="hidden">
 				<div class="banner-title">
 					<img src="img/logo_mini.png"><br>
