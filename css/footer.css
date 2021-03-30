@@ -1,7 +1,7 @@
 footer {
 	width: 100%;
 	background-color: #27180e;
-	color: #fff;
+	color: #999;
 	text-align: center
 }
 
@@ -23,7 +23,7 @@ footer .links {
 .links span:last-of-type {border-right: none}
 
 .phone {
-	color: #fff;
+	color: #999;
 	text-decoration: none
 }
 
