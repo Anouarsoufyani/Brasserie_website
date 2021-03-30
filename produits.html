@@ -16,6 +16,22 @@
 		<link rel="stylesheet" type="text/css" href="css/main.css">
 		<link rel="stylesheet" type="text/css" href="css/products.css">
 		<script type="text/javascript" src="menu.js"></script>
+		<script type="text/javascript">
+			window.onload = function() {
+				var amber = document.querySelector(".amber .photo"),
+					blond = document.querySelector(".blond .photo"),
+					brown = document.querySelector(".brown .photo");
+				// amber
+				amber.src = "img/amber_small.webp";
+				amber.onload = function() {this.src = "img/amber.jpg"}
+				// blond
+				blond.src = "img/blond_small.webp";
+				blond.onload = function() {this.src = "img/blond.jpg"}
+				// brown
+				brown.src = "img/brown_small.webp";
+				brown.onload = function() {this.src = "img/brown.jpg"}
+			}
+		</script>
 		<title>Nos produits • La Brasserie des Evêques</title>
 	</head>
 
@@ -34,7 +50,7 @@
 			<span class="title">Nos bières</span>
 			<div class="products">
 				<div class="item amber">
-					<img src="img/amber.jpg" class="photo">
+					<img class="photo">
 					<span class="subtitle color">AMBREE</span>
 					<ul class="info">
 						<li>33 cl et 75 cl</li>
@@ -48,7 +64,7 @@
 					</ul>
 				</div>
 				<div class="item blond">
-					<img src="img/blond.jpg" class="photo">
+					<img class="photo">
 					<span class="subtitle color">BLONDE</span>
 					<ul class="info">
 						<li>33 cl et 75 cl</li>
@@ -62,7 +78,7 @@
 					</ul>
 				</div>
 				<div class="item brown">
-					<img src="img/brown.jpg" class="photo">
+					<img class="photo">
 					<span class="subtitle color">BRUNE</span>
 					<ul class="info">
 						<li>33 cl et 75 cl</li>

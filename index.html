@@ -26,7 +26,8 @@
 
 			window.onload = function() {
 				var header = document.querySelector("header"),
-					banner = document.querySelector(".banner");
+					banner = document.querySelector(".banner"),
+					workshop = document.querySelector(".workshop");
 				banner.style.height = calc_banner_height() + "px";
 				this.onresize = function() {banner.style.height = calc_banner_height() + "px"}
 				this.onscroll = function() {
@@ -38,6 +39,8 @@
 						header.style.borderBottomColor = "transparent"
 					}
 				}
+				workshop.src = "img/workshop_small.webp";
+				workshop.onload = function() {this.src = "img/workshop.jpg"}
 			}
 		</script>
 		<title>Accueil • La Brasserie des Evêques</title>
@@ -72,7 +75,7 @@
 				d'où un puissant évêché a rayonné pendant mille ans.
 			</p>
 			<span class="subtitle">Notre atelier</span><br>
-			<img src="img/workshop.jpg" class="workshop">
+			<img class="workshop">
 		</main>
 
 		<footer>
