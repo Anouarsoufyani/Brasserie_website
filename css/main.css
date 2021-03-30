@@ -54,7 +54,7 @@ main {
 }
 @media screen and (max-width: 700px) {.workshop {width: 100%}}
 @media screen and (max-width: 500px) {
-	main {padding: 50px 0}
+	main {padding: 100px 0 50px 0}
 	.banner span {display: none}
 	.title.main, .subtitle.main {display: block}
 	.item {margin: 20px 0 !important}
