@@ -15,7 +15,7 @@
 		<link rel="stylesheet" type="text/css" href="css/footer.css">
 		<link rel="stylesheet" type="text/css" href="css/header.css">
 		<link rel="stylesheet" type="text/css" href="css/main.css">
-		<link rel="stylesheet" type="text/css" href="css/titles.css">
+		<script type="text/javascript" src="menu.js"></script>
 		<script type="text/javascript">
 			function calc_banner_height() {
 				var h = window.innerWidth,
@@ -26,27 +26,30 @@
 
 			window.onload = function() {
 				var header = document.querySelector("header"),
-					banner = document.querySelector(".banner");
+					banner = document.querySelector(".banner"),
+					workshop = document.querySelector(".workshop");
 				banner.style.height = calc_banner_height() + "px";
 				this.onresize = function() {banner.style.height = calc_banner_height() + "px"}
 				this.onscroll = function() {
 					if (this.scrollY >= calc_banner_height()) {
 						header.style.backgroundColor = "#634b4a";
-						header.style.borderBottom = "1px solid #fff"
+						header.style.borderBottomColor = "#fff"
 					} else {
 						header.style.backgroundColor = "transparent";
-						header.style.borderBottom = "none"
+						header.style.borderBottomColor = "transparent"
 					}
 				}
+				workshop.src = "img/workshop_small.webp";
+				workshop.onload = function() {this.src = "img/workshop.jpg"}
 			}
 		</script>
 		<title>Accueil • La Brasserie des Evêques</title>
 	</head>
 
 	<body>
-		<header>
-			<a href="index.html" class="logo" title="La Brasserie des Evêques"></a>
-			<a href="javascript:void(0)" class="open_nav"></a>
+		<header style="border-bottom-color: transparent; background-color: transparent">
+			<a href="index.html" class="logo" title="La Brasserie des Evêques"><img src="img/logo.jpg"></a>
+			<a href="javascript:void(0)" class="menu closed" onclick="menu(this)" title="Menu"></a>
 			<nav>
 				<a href="produits.html" title="Nos produits"><span>NOS PRODUITS</span></a>
 				<a href="atelier.html" title="Faites votre bière"><span>FAITES VOTRE BIERE</span></a>
@@ -55,31 +58,36 @@
 		</header>
 
 		<section class="banner">
-			<span class="logo"></span>
-			<span class="title">Brasserie des Évêques</span>
+			<span class="title">La Brasserie des Évêques</span>
 			<span class="subtitle">Bières artisanales</span>
 		</section>
 
-		<main style="padding-top: 100px">
+		<main style="padding-top: 50px">
+			<span class="title main">La Brasserie des Évêques</span>
+			<span class="subtitle main">Bières artisanales</span>
 			<span class="title">Bienvenue</span>
-			<div>
-				<p>
-					En quelques années, les pionniers du brassage maison ont su donner une âme à la bière.<br><br>
-					L'eau, le malt, le houblon, sont devenus source d'inspiration (et d'expérimentations) de brasseurs passionnés. Saveurs, arômes et robes se déclinent à l'infini.<br><br>
-					Les bières de terroir sont nées. Les nôtres sont maritimes. Nous habitons sur le littoral languedocien, près de l'île de Maguelone d'où un puissant évêché a rayonné pendant 1000 ans.
-				</p>
-			</div>
+			<p class="description">
+				En quelques années, les pionniers du brassage maison ont su donner une âme à la bière.<br><br>
+				L'eau, le malt, le houblon sont devenus sources d'inspiration et d'expérimentations<br>
+				de brasseurs passionnés. Saveurs, arômes et robes se déclinent à l'infini.<br>
+				Les bières de terroir sont nées. Les nôtres sont maritimes.<br>
+				Nous habitons sur le littoral languedocien, près de l'île de Maguelone,<br>
+				d'où un puissant évêché a rayonné pendant mille ans.
+			</p>
 			<span class="subtitle">Notre atelier</span><br>
-			<img src="img/workshop.jpg" class="workshop">
+			<img class="workshop">
 		</main>
 
 		<footer>
 			<div class="links">
 				<span>yannick.bonnet@free.fr</span>
-				<span>06 68 92 20 80</span>
+				<span><a href="tel:0668922080" class="phone" title="Appeler">06 68 92 20 80</a></span>
 				<span><a href="https://www.facebook.com/BrasseriedesEveques" class="fb" title="Facebook"></a></span>
 			</div>
-			<div class="copyright">© 2021 Brasserie des Evêques. Tous droits réservés.</div>
+			<div class="copyright">
+				© 2021 La Brasserie des Evêques. Tous droits réservés.<br>
+				<span style="font-size: 12px">Conception du site : Anouar Soufyani et Mattéo Legagneux</span>
+			</div>
 		</footer>
 	</body>
 

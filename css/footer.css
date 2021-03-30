@@ -2,31 +2,32 @@ footer {
 	width: 100%;
 	background-color: #4f3c3b;
 	color: #fff;
-	text-align: center;
-	font-family: "Roboto Slab Regular"
+	text-align: center
 }
 
 footer .links {
-	display: flex;
-	justify-content: center;
-	height: 40px;
 	line-height: 40px;
-	padding: 10px 0 20px 0;
+	margin-bottom: 20px;
+	padding: 10px 10px 0 10px;
 	font-size: 20px
 }
 
-footer .copyright {
-	height: 40px;
-	line-height: 40px;
-	font-size: 16px
-}
-
 .links span {
-	padding: 0 20px;
-	border-right: 1px solid #fff;
+	display: inline-block;
+	vertical-align: top;
+	height: 40px;
+	margin-bottom: 10px;
+	padding: 0 20px
 }
 
 .links span:last-of-type {border-right: none}
+
+.phone {
+	color: #fff;
+	text-decoration: none
+}
+
+.phone:hover {text-decoration: underline}
 
 .fb {
 	display: inline-block;
@@ -37,8 +38,18 @@ footer .copyright {
 	transition: 0.2s
 }
 
+.fb:hover {
+	-webkit-filter: brightness(0.8);
+	filter: brightness(0.8)
+}
+
 .fb:active {
-	-webkit-transform: scale(0.9);
-	-ms-transform: scale(0.9);
-	transform: scale(0.9)
+	-webkit-filter: brightness(0.6);
+	filter: brightness(0.6);
+	transition: 0.1s
+}
+
+footer .copyright {
+	padding: 10px;
+	font-size: 16px
 }

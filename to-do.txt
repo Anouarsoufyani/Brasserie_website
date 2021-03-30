@@ -1,17 +1,4 @@
-anim parallaxe index.html
-
-script (php ?) pour l'envoi de mail
-
-rogner l'icone ou en faire une nouvelle
-
-page produits (mattéo)
-
-page contact (anouar)
-
-page atelier
-
-trouver une font condensed sans-serif free pour remplacer alvaro (payant)
-
-finir le responsive
-
-finir le footer
+- Anim parallaxe bannière ?
+- Page Atelier
+- Page Contact (Anouar)
+- Script pour l'envoi des mails (PHP ?)

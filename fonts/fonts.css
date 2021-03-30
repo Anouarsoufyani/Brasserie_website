@@ -15,3 +15,25 @@
 	font-family: "Roboto Slab Regular";
 	src: url(RobotoSlabRegular.ttf) format("truetype")
 }
+
+
+
+body {font-family: "Roboto Slab Regular"}
+
+nav a {font-family: Alvaro}
+
+.title,
+.subtitle {
+	font-weight: normal;
+	font-family: Bodoni
+}
+
+.title {
+	margin-bottom: 20px;
+	font-size: 60px
+}
+
+.subtitle {
+	margin: 20px 0;
+	font-size: 40px
+}

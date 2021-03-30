@@ -1,25 +1,65 @@
 body {
 	margin: 0;
 	overflow-x: hidden;
-	background-color: #4f3c3b
+	background-color: #4f3c3b /* #4f3c3b = #634b4a with rgba(0, 0, 0, 0.2) */
 }
+
+::selection {background-color: rgba(0, 0, 0, 0.2)}
 
 main {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	padding: 50px;
+	padding: 100px 50px 50px 50px;
+	box-shadow: 0 -20px 40px rgba(0, 0, 0, 0.5); /* top box shadow */
 	background-color: #634b4a;
 	color: #fff;
 	text-align: center;
-	font-family: "Roboto Slab Regular";
 	font-size: 20px
 }
 
+.title.main,
+.subtitle.main {
+	display: none;
+	margin: 0;
+	padding: 0 25px
+}
+
+.subtitle.main {
+	padding-bottom: 40px;
+	margin-bottom: 40px;
+	border-bottom: 1px solid #fff
+}
+
+.description {padding: 0 25px}
+
 .workshop {width: 50%}
 
-@media screen and (max-width: 1000px) {.workshop {width: 75%}}
-@media screen and (max-width: 750px) {.workshop {width: 100%}}
 
-/* #4f3c3b = #634b4a with rgba(0, 0, 0, 0.2) */
+
+/* media queries */
+@media screen and (max-width: 1000px) {.workshop {width: 65%}}
+@media screen and (max-width: 800px) {
+	.menu {visibility: visible}
+	nav {
+		visibility: hidden;
+		height: auto;
+		top: 60px;
+		opacity: 0;
+		background-color: #000
+	}
+	nav a {
+		display: block;
+		margin-bottom: 10px
+	}
+	.title {font-size: 35px !important}
+	.subtitle {font-size: 25px !important}
+}
+@media screen and (max-width: 700px) {.workshop {width: 100%}}
+@media screen and (max-width: 500px) {
+	main {padding: 100px 0 50px 0}
+	.banner span {display: none}
+	.title.main, .subtitle.main {display: block}
+	.item {margin: 20px 0 !important}
+}
