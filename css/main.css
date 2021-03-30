@@ -12,7 +12,7 @@ main {
 	align-items: center;
 	justify-content: center;
 	padding: 100px 50px 50px 50px;
-	box-shadow: 0 -20px 40px #000;
+	box-shadow: 0 0 40px #000; /* top box-shadow */
 	background-color: #634b4a;
 	color: #fff;
 	text-align: center;
@@ -21,11 +21,12 @@ main {
 
 .workshop {width: 50%}
 
+
+
 /* media queries */
 @media screen and (max-width: 1000px) {.workshop {width: 65%}}
 @media screen and (max-width: 800px) {
-	.logo {left: calc(50% - 57.5px)}
-	.open_nav {visibility: visible}
+	.menu {visibility: visible}
 	nav {
 		visibility: hidden;
 		height: auto;

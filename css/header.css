@@ -14,22 +14,23 @@ header {
 	height: 60px
 }
 
-.open_nav {
+.menu {
 	visibility: hidden;
 	width: 60px;
 	height: 60px;
 	float: right;
-	background: url(../img/menu.svg) center no-repeat;
+	background-position: center;
+	background-repeat: no-repeat;
 	background-size: 30px;
-	-webkit-filter: invert(1);
-	filter: invert(1)
+	transition: 0.2s
 }
 
-.open_nav:hover ~ nav,
-nav:hover {
-	visibility: visible;
-	opacity: 1
+.menu.opened {
+	background-color: #000;
+	background-image: url(../img/cross.svg)
 }
+
+.menu.closed {background-image: url(../img/menu.svg)}
 
 nav {
 	visibility: visible;
@@ -37,7 +38,6 @@ nav {
 	right: 0;
 	position: absolute;
 	opacity: 1;
-	background-color: transparent;
 	transition: 0.2s
 }
 
