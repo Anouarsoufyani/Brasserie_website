@@ -1,12 +1,10 @@
 function menu(btn) {
 	var nav = document.querySelector("nav");
-	if (btn.className == "menu closed") {
+	if (btn.className == "menu") {
 		btn.className = "menu opened";
-		nav.style.visibility = "visible";
-		nav.style.opacity = 1
+		nav.className = "opened"
 	} else {
-		btn.className = "menu closed";
-		nav.style.visibility = "hidden";
-		nav.style.opacity = 0
+		btn.className = "menu";
+		nav.className = ""
 	}
 }

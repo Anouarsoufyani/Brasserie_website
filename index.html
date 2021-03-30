@@ -32,8 +32,8 @@
 				this.onresize = function() {banner.style.height = calc_banner_height() + "px"}
 				this.onscroll = function() {
 					if (this.scrollY >= calc_banner_height()) {
-						header.style.backgroundColor = "#634b4a";
-						header.style.borderBottomColor = "#fff"
+						header.style.backgroundColor = "#321f12";
+						header.style.borderBottomColor = "#5b4c41"
 					} else {
 						header.style.backgroundColor = "transparent";
 						header.style.borderBottomColor = "transparent"
@@ -49,7 +49,7 @@
 	<body>
 		<header style="border-bottom-color: transparent; background-color: transparent">
 			<a href="index.html" class="logo" title="La Brasserie des Evêques"><img src="img/logo.jpg"></a>
-			<a href="javascript:void(0)" class="menu closed" onclick="menu(this)" title="Menu"></a>
+			<a href="javascript:void(0)" class="menu" onclick="menu(this)" title="Menu"></a>
 			<nav>
 				<a href="produits.html" title="Nos produits"><span>NOS PRODUITS</span></a>
 				<a href="atelier.html" title="Faites votre bière"><span>FAITES VOTRE BIERE</span></a>

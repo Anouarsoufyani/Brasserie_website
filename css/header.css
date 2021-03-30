@@ -3,8 +3,8 @@ header {
 	width: 100%;
 	height: 60px;
 	position: fixed;
-	border-bottom: 1px solid #fff;
-	background-color: #634b4a;
+	border-bottom: 1px solid #5b4c41;
+	background-color: #321f12;
 	transition: 0.2s
 }
 
@@ -20,6 +20,7 @@ header {
 	width: 60px;
 	height: 60px;
 	float: right;
+	background-image: url(../img/menu.svg);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: 30px;
@@ -31,8 +32,6 @@ header {
 	background-image: url(../img/cross.svg)
 }
 
-.menu.closed {background-image: url(../img/menu.svg)}
-
 nav {
 	visibility: visible;
 	height: 60px;
@@ -40,6 +39,11 @@ nav {
 	position: absolute;
 	opacity: 1;
 	transition: 0.2s
+}
+
+nav.opened {
+	visibility: visible;
+	opacity: 1
 }
 
 nav a {
@@ -55,24 +59,6 @@ nav a {
 	letter-spacing: 2px;
 	transition: 0.5s
 }
-
-nav a:after {
-	content: "";
-	width: 0;
-	height: 100%;
-	right: 0;
-	position: absolute;
-	background-color: #fff;
-	transition: 0.5s
-}
-
-nav a span {
-	position: relative;
-	z-index: 1
-}
-
-nav a:hover {color: #000}
-nav a:hover:after {width: 100%}
 
 nav a:active {
 	-webkit-transform: scale(0.9);
