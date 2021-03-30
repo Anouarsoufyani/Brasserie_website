@@ -100,6 +100,7 @@ textarea{
   outline: none;
   color: #fff;
   padding: 5px;
+  resize: none;
 }
 
 .submit_container{
