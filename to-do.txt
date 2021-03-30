@@ -1,9 +1,4 @@
-anim parallaxe index.html
-
-script (php ?) pour l'envoi de mail
-
-page contact (anouar)
-
-page atelier
-
-finir le responsive
+- Anim parallaxe bannière ?
+- Page Atelier
+- Page Contact (Anouar)
+- Script pour l'envoi des mails (PHP ?)

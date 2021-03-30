@@ -11,13 +11,24 @@ main {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	padding: 100px 50px 50px 50px;
-	box-shadow: 0 0 40px #000; /* top box-shadow */
+	padding: 50px;
+	box-shadow: 0 -20px 40px rgba(0, 0, 0, 0.5); /* top box shadow */
 	background-color: #634b4a;
 	color: #fff;
 	text-align: center;
 	font-size: 20px
 }
+
+.title.main,
+.subtitle.main {
+	display: none;
+	margin: 0;
+	padding: 0 25px
+}
+
+.subtitle.main {margin-bottom: 40px}
+
+.description {padding: 0 25px}
 
 .workshop {width: 50%}
 
@@ -38,11 +49,13 @@ main {
 		display: block;
 		margin-bottom: 10px
 	}
-	.title {font-size: 40px !important}
-	.subtitle {font-size: 30px !important}
+	.title {font-size: 35px !important}
+	.subtitle {font-size: 25px !important}
 }
 @media screen and (max-width: 700px) {.workshop {width: 100%}}
 @media screen and (max-width: 500px) {
-	main {padding: 100px 0 50px 0}
+	main {padding: 50px 0}
+	.banner span {display: none}
+	.title.main, .subtitle.main {display: block}
 	.item {margin: 20px 0 !important}
 }

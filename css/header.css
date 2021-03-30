@@ -4,7 +4,8 @@ header {
 	height: 60px;
 	position: fixed;
 	border-bottom: 1px solid #fff;
-	background-color: #634b4a
+	background-color: #634b4a;
+	transition: 0.2s
 }
 
 .logo {position: absolute}
