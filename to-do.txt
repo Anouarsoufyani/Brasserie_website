@@ -1,5 +1,4 @@
 - Anim parallaxe bannière ?
 - Page Atelier
-- Page Contact (Anouar)
 - Script pour l'envoi des mails (PHP ?)
 - Metas
