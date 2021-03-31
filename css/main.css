@@ -1,10 +1,7 @@
 body {
 	margin: 0;
-	overflow-x: hidden;
-	background-color: #fff /* #4f3c3b = #634b4a with rgba(0, 0, 0, 0.2) */
+	background-color: #fff
 }
-
-::selection {background-color: rgba(0, 0, 0, 0.2)}
 
 main {
 	display: flex;
@@ -16,10 +13,6 @@ main {
 	text-align: center;
 	font-size: 20px
 }
-
-.description {padding: 0 25px}
-
-.workshop {width: 50%}
 
 
 
@@ -43,7 +36,7 @@ main {
 	nav a:hover {color: #fff}
 	nav a:hover:after {width: 100%}
 }
-@media screen and (max-width: 1000px) {.workshop {width: 65%}}
+@media screen and (max-width: 1000px) {.workshop {width: 65% !important}}
 @media screen and (max-width: 800px) {
 	.menu {visibility: visible}
 	nav {
@@ -65,12 +58,20 @@ main {
 	}
 	.title {font-size: 35px !important}
 	.subtitle {font-size: 25px !important}
-	.description {font-size: 18px}
+	.description {font-size: 18px !important}
 }
-@media screen and (max-width: 700px) {.workshop {width: 100%}}
+@media screen and (max-width: 700px) {.workshop {width: 100% !important}}
 @media screen and (max-width: 500px) {
 	main {padding: 100px 0 50px 0}
 	.banner span {display: none}
 	.title.main, .subtitle.main {display: block}
 	.item {margin: 20px 0 !important}
 }
+
+
+
+/*
+	Old colors
+	#634b4a
+	#4f3c3b (#634b4a with rgba(0, 0, 0, 0.2))
+*/
