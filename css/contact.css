@@ -4,16 +4,7 @@ main{
   align-items: center;
   flex-direction: column;
   width: 100%;
-  padding: 50px 0 0 0;
-}
-
-#title_container{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 25vh;
-  background: #4f3c3b;
+  padding: 100px 0 0 0;
 }
 
 .contact_containers{

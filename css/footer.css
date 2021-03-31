@@ -4,7 +4,7 @@ footer {
 	text-align: center
 }
 
-footer .links {
+.links {
 	line-height: 40px;
 	margin-bottom: 20px;
 	padding: 10px 10px 0 10px;
@@ -19,8 +19,6 @@ footer .links {
 	padding: 0 20px
 }
 
-.links span:last-of-type {border-right: none}
-
 .phone {
 	color: #000;
 	text-decoration: none
@@ -33,22 +31,15 @@ footer .links {
 	width: 40px;
 	height: 40px;
 	background-image: url(../img/fb.png);
-	background-size: cover;
-	transition: 0.2s
+	background-size: cover
 }
 
 .fb:hover {
-	-webkit-filter: brightness(0.8);
-	filter: brightness(0.8)
+	-webkit-filter: brightness(1.2);
+	filter: brightness(1.2)
 }
 
-.fb:active {
-	-webkit-filter: brightness(0.6);
-	filter: brightness(0.6);
-	transition: 0.1s
-}
-
-footer .copyright {
+.copyright {
 	padding: 10px;
 	font-size: 16px
 }

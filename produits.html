@@ -15,19 +15,19 @@
 		<link rel="stylesheet" type="text/css" href="css/header.css">
 		<link rel="stylesheet" type="text/css" href="css/main.css">
 		<link rel="stylesheet" type="text/css" href="css/products.css">
-		<script type="text/javascript" src="menu.js"></script>
+		<script type="text/javascript" src="toggle_menu.js"></script>
 		<script type="text/javascript">
 			window.onload = function() {
 				var amber = document.querySelector(".amber .photo"),
 					blond = document.querySelector(".blond .photo"),
 					brown = document.querySelector(".brown .photo");
-				// amber
+				// init amber beer photo
 				amber.src = "img/amber_small.webp";
 				amber.onload = function() {this.src = "img/amber.jpg"}
-				// blond
+				// init blond beer photo
 				blond.src = "img/blond_small.webp";
 				blond.onload = function() {this.src = "img/blond.jpg"}
-				// brown
+				// init brown beer photo
 				brown.src = "img/brown_small.webp";
 				brown.onload = function() {this.src = "img/brown.jpg"}
 			}
@@ -37,8 +37,8 @@
 
 	<body>
 		<header>
-			<a href="index.html" class="logo" title="La Brasserie des Evêques"><img src="img/logo.jpg"></a>
-			<a href="javascript:void(0)" class="menu" onclick="menu(this)" title="Menu"></a>
+			<a href="index.html" class="logo" title="La Brasserie des Evêques"></a>
+			<a href="javascript:void(0)" class="menu" onclick="toggle_menu(this)" title="Menu"></a>
 			<nav>
 				<a href="produits.html" title="Nos produits"><span>NOS PRODUITS</span></a>
 				<a href="atelier.html" title="Faites votre bière"><span>FAITES VOTRE BIERE</span></a>

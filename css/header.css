@@ -8,11 +8,12 @@ header {
 	transition: 0.2s
 }
 
-.logo {position: absolute}
-
-.logo img {
+.logo {
 	width: 115px;
-	height: 60px
+	height: 60px;
+	position: absolute;
+	background: url(../img/logo.jpg) center no-repeat;
+	background-size: contain
 }
 
 .logo:hover {
@@ -42,7 +43,6 @@ header {
 .menu.opened {background-image: url(../img/cross.svg)}
 
 nav {
-	visibility: visible;
 	height: 60px;
 	right: 0;
 	position: absolute;

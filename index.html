@@ -15,7 +15,7 @@
 		<link rel="stylesheet" type="text/css" href="css/footer.css">
 		<link rel="stylesheet" type="text/css" href="css/header.css">
 		<link rel="stylesheet" type="text/css" href="css/main.css">
-		<script type="text/javascript" src="menu.js"></script>
+		<script type="text/javascript" src="toggle_menu.js"></script>
 		<script type="text/javascript">
 			function calc_banner_height() {
 				var h = window.innerWidth,
@@ -45,6 +45,7 @@
 						nav.classList.add("light")
 					}
 				}
+				// init workshop photo
 				workshop.src = "img/workshop_small.webp";
 				workshop.onload = function() {this.src = "img/workshop.jpg"}
 			}
@@ -54,8 +55,8 @@
 
 	<body>
 		<header style="box-shadow: none; background-color: transparent">
-			<a href="index.html" class="logo" title="La Brasserie des Evêques"><img src="img/logo.jpg"></a>
-			<a href="javascript:void(0)" class="menu light" onclick="menu(this)" title="Menu"></a>
+			<a href="index.html" class="logo" title="La Brasserie des Evêques"></a>
+			<a href="javascript:void(0)" class="menu light" onclick="toggle_menu(this)" title="Menu"></a>
 			<nav class="light">
 				<a href="produits.html" title="Nos produits"><span>NOS PRODUITS</span></a>
 				<a href="atelier.html" title="Faites votre bière"><span>FAITES VOTRE BIERE</span></a>

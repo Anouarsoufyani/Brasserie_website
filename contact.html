@@ -15,14 +15,14 @@
 		<link rel="stylesheet" type="text/css" href="css/header.css">
 		<link rel="stylesheet" type="text/css" href="css/main.css">
 		<link rel="stylesheet" type="text/css" href="css/contact.css">
-		<script type="text/javascript" src="menu.js"></script>
+		<script type="text/javascript" src="toggle_menu.js"></script>
 		<title>Nous contacter • La Brasserie des Evêques</title>
 	</head>
 
 	<body>
 		<header>
-			<a href="index.html" class="logo" title="La Brasserie des Evêques"><img src="img/logo.jpg"></a>
-			<a href="javascript:void(0)" class="menu" onclick="menu(this)" title="Menu"></a>
+			<a href="index.html" class="logo" title="La Brasserie des Evêques"></a>
+			<a href="javascript:void(0)" class="menu" onclick="toggle_menu(this)" title="Menu"></a>
 			<nav>
 				<a href="produits.html" title="Nos produits"><span>NOS PRODUITS</span></a>
 				<a href="atelier.html" title="Faites votre bière"><span>FAITES VOTRE BIERE</span></a>
@@ -31,11 +31,7 @@
 		</header>
 
 		<main>
-
-			<section id="title_container">
-				<span class="title" style="margin:0;">Contact</span>
-			</section>
-
+			<span class="title">Contact</span>
 			<section id="coordonees_section" class="contact_containers">
 				<div id="coordonees">
 					<h2 style="margin-top: 0;">Coordonnées :</h2>
