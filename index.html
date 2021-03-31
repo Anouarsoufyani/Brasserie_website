@@ -26,6 +26,7 @@
 
 			window.onload = function() {
 				var header = document.querySelector("header"),
+					logo = document.querySelector(".logo"),
 					menu = document.querySelector(".menu"),
 					nav = document.querySelector("nav"),
 					banner = document.querySelector(".banner"),
@@ -34,13 +35,16 @@
 				this.onresize = function() {banner.style.height = calc_banner_height() + "px"}
 				this.onscroll = function() {
 					if (this.scrollY >= calc_banner_height()) {
+						// the user has scrolled the page
 						header.style.backgroundColor = "#fff";
 						header.style.boxShadow = "0 10px 20px rgba(0, 0, 0, 0.2)";
+						logo.classList.add("extended");
 						menu.classList.remove("light");
 						nav.classList.remove("light")
 					} else {
 						header.style.backgroundColor = "transparent";
 						header.style.boxShadow = "none";
+						logo.classList.remove("extended");
 						menu.classList.add("light");
 						nav.classList.add("light")
 					}
