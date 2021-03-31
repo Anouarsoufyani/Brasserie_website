@@ -26,17 +26,23 @@
 
 			window.onload = function() {
 				var header = document.querySelector("header"),
+					menu = document.querySelector(".menu"),
+					nav = document.querySelector("nav"),
 					banner = document.querySelector(".banner"),
 					workshop = document.querySelector(".workshop");
 				banner.style.height = calc_banner_height() + "px";
 				this.onresize = function() {banner.style.height = calc_banner_height() + "px"}
 				this.onscroll = function() {
 					if (this.scrollY >= calc_banner_height()) {
-						header.style.backgroundColor = "#321f12";
-						header.style.borderBottomColor = "#5b4c41"
+						header.style.backgroundColor = "#fff";
+						header.style.boxShadow = "0 10px 20px rgba(0, 0, 0, 0.2)";
+						menu.classList.remove("light");
+						nav.classList.remove("light")
 					} else {
 						header.style.backgroundColor = "transparent";
-						header.style.borderBottomColor = "transparent"
+						header.style.boxShadow = "none";
+						menu.classList.add("light");
+						nav.classList.add("light")
 					}
 				}
 				workshop.src = "img/workshop_small.webp";
@@ -47,10 +53,10 @@
 	</head>
 
 	<body>
-		<header style="border-bottom-color: transparent; background-color: transparent">
+		<header style="box-shadow: none; background-color: transparent">
 			<a href="index.html" class="logo" title="La Brasserie des Evêques"><img src="img/logo.jpg"></a>
-			<a href="javascript:void(0)" class="menu" onclick="menu(this)" title="Menu"></a>
-			<nav>
+			<a href="javascript:void(0)" class="menu light" onclick="menu(this)" title="Menu"></a>
+			<nav class="light">
 				<a href="produits.html" title="Nos produits"><span>NOS PRODUITS</span></a>
 				<a href="atelier.html" title="Faites votre bière"><span>FAITES VOTRE BIERE</span></a>
 				<a href="contact.html" title="Nous contacter"><span>NOUS CONTACTER</span></a>

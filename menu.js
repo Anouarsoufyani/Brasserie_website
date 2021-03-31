@@ -1,10 +1,10 @@
 function menu(btn) {
 	var nav = document.querySelector("nav");
-	if (btn.className == "menu") {
-		btn.className = "menu opened";
-		nav.className = "opened"
+	if (!btn.classList.contains("opened")) {
+		btn.classList.add("opened");
+		nav.classList.add("opened");
 	} else {
-		btn.className = "menu";
-		nav.className = ""
+		btn.classList.remove("opened");
+		nav.classList.remove("opened")
 	}
 }
