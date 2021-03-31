@@ -1,4 +1,7 @@
 - Anim parallaxe bannière ?
+- Anim logo
 - Page Atelier
+- Finir page Contact (Anouar)
 - Script pour l'envoi des mails (PHP ?)
-- Metas
+- Voir metas
+- Fonts ?
