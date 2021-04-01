@@ -8,7 +8,7 @@ body {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	background-image: url("../img/banner.jpg") fixed;
+	background: url("../img/banner.jpg") fixed;
 	background-size: 100%;
 	color: #fff
 }
