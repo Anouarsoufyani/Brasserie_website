@@ -21,12 +21,68 @@
 }
 
 .cards{
+  position: relative;
   width: 30%;
   height: 50vh;
   border: 1px solid;
 }
 
+.title_card{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: red;
+  transition: 0.2s;
+}
+
+.title_card:hover{
+  opacity: 0;
+}
+
+.content_card{
+  width: 100%;
+  height: 100%;
+}
+
 #contact_container{
   flex-direction: column;
   height: 25vh;
+}
+
+#contact_btn{
+  border: 1px solid #000;
+  width: 25%;
+  padding: 5px;
+  color: black;
+  outline: none;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+#contact_btn:hover{
+  color: white;
+  background: black;
+}
+
+@media screen and (max-width: 1500px){
+  #card_container{
+    flex-direction: column;
+  }
+  .cards{
+    width: 50%;
+    height: 45vh;
+    border: 1px solid;
+    margin-top: 25px;
+  }
+}
+
+@media screen and (max-width: 800px){
+  #contact_btn{
+    width: 50%;
+  }
 }
