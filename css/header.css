@@ -65,16 +65,7 @@ nav a {
 	position: relative; /* allows hover animation */
 	color: #000;
 	text-decoration: none;
-	font-size: 30px;
-	letter-spacing: 2px;
 	transition: 0.4s
 }
 
 nav.light a {color: #fff}
-
-nav a:active {
-	-webkit-transform: scale(0.9);
-	-ms-transform: scale(0.9);
-	transform: scale(0.9);
-	transition: 0.1s
-}

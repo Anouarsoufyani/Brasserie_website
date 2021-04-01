@@ -23,7 +23,20 @@ html, body {
 	font-family: "Roboto Slab"
 }
 
-nav a {font-family: Alvaro}
+nav a,
+input[type="submit"] {
+	font-size: 30px;
+	font-family: Alvaro;
+	letter-spacing: 2px
+}
+
+nav a:active,
+input[type="submit"]:active {
+	-webkit-transform: scale(0.9);
+	-ms-transform: scale(0.9);
+	transform: scale(0.9);
+	transition: 0.1s
+}
 
 input, textarea {
 	font-size: 18px;
