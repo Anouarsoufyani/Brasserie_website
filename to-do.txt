@@ -1,2 +1,3 @@
 - Finir page atelier (Anouar)
 - Script pour l'envoi des mails (PHP ?)
+- Réparer l'API pour la map (activer le billing)
