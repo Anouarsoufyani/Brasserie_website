@@ -17,6 +17,13 @@
 		<link rel="stylesheet" type="text/css" href="css/header.css">
 		<link rel="stylesheet" type="text/css" href="css/main.css">
 		<script type="text/javascript" src="toggle_menu.js"></script>
+		<script type="text/javascript">
+			function initMap() {
+				const loc = {lat: 0, lng: 0};
+				const map = new google.maps.Map(document.getElementById("map"), {zoom: 4, center: loc});
+				const marker = new google.maps.Marker({position: loc, map: map})
+			}
+		</script>
 		<title>Nous contacter • La Brasserie des Evêques</title>
 	</head>
 
@@ -47,8 +54,10 @@
 				<textarea name="message" placeholder="Votre message"></textarea><br>
 				<input type="submit" name="submit" value="Envoyer" title="Envoyer">
 			</form>
-			<section class="map" style="margin-bottom: 0">
+			<section class="maps" style="margin-bottom: 0">
 				<span class="subtitle">Nous trouver</span>
+				<div id="map"></div>
+				<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAqgG7ZhqEnLmF59diS7RLhu2wrxbTFLhM&callback=initMap&libraries=&v=weekly" async></script>
 			</section>
 		</main>
 
