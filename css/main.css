@@ -3,6 +3,16 @@ body {
 	background-color: #fff
 }
 
+.banner {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-image: url("../img/banner.jpg") fixed;
+	background-size: 100%;
+	color: #fff
+}
+
 main {
 	display: flex;
 	flex-direction: column;
