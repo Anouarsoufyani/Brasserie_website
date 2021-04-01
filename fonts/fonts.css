@@ -34,6 +34,7 @@ input, textarea {
 
 .title,
 .subtitle {
+	display: block;
 	font-weight: normal;
 	font-family: Bodoni
 }

@@ -24,45 +24,29 @@
 			<a href="javascript:void(0)" class="menu" onclick="toggle_menu(this)" title="Menu"></a>
 			<nav>
 				<a href="produits.html" title="Nos produits"><span>NOS PRODUITS</span></a>
-				<a href="atelier.html" title="Faites votre bière"><span>FAITES VOTRE BIERE</span></a>
+				<a href="atelier.html" title="Notre atelier"><span>FAITES VOTRE BIERE</span></a>
 				<a href="contact.html" title="Nous contacter"><span>NOUS CONTACTER</span></a>
 			</nav>
 		</header>
 
 		<main>
-			<span class="title">Contact</span>
-			<section id="coordonees_section" class="contact_containers">
-				<div id="coordonees">
-					<h2 style="margin-top: 0">Coordonnées</h2>
-					yannick.bonnet@free.fr<br>
-					06 68 92 20 80<br>
-					<a href="https://www.facebook.com/BrasseriedesEveques" class="fb" title="Facebook"></a>
-				</div>
+			<span class="title">Nous contacter</span>
+			<section class="contact">
+				<span class="subtitle">Coordonnées</span>
+				yannick.bonnet@free.fr<br><br>06 68 92 20 80
 			</section>
-			<section id="formulaire_section" class="contact_containers">
-				<div id="formulaire_container">
-					<div id="form_title"><h2>Nous contacter</h2></div>
-					<form class="formulaire" action="index.html" method="post">
-						<div class="input_container">
-							<div class="inputs_top">
-								<input placeholder="Nom" type="text" name="" value="">
-								<input placeholder="Prénom" type="text" name="" value="">
-							</div>
-							<div class="inputs_bottom">
-								<input placeholder="Email" type="text" name="" value="">
-								<input placeholder="Téléphone" type="text" name="" value="">
-							</div>
-						</div>
-						<div class="textarea_container">
-							<textarea placeholder="Votre message" name="name" rows="8" cols="80"></textarea>
-						</div>
-						<div class="submit_container">
-							<input id="submit_btn" type="submit" value="Valider">
-						</div>
-					</form>
-				</div>
+			<form method="POST" action="index.html">
+				<span class="subtitle">Nous contacter</span>
+				<input type="text" name="name1" placeholder="Votre prénom">
+				<input type="text" name="name2" placeholder="Votre nom"><br>
+				<input type="mail" name="mail" placeholder="Votre e-mail">
+				<input type="tel" name="tel" placeholder="Votre numéro de téléphone"><br>
+				<textarea name="message" placeholder="Votre message"></textarea><br>
+				<input type="submit" name="submit" value="Envoyer" title="Envoyer">
+			</form>
+			<section class="map" style="margin-bottom: 0">
+				<span class="subtitle">Nous trouver</span>
 			</section>
-			<section id="maps_section" class="contact_containers"></section>
 		</main>
 
 		<footer>
