@@ -37,6 +37,7 @@
   height: 100%;
   background: red;
   transition: 0.2s;
+  z-index: 2;
 }
 
 .title_card:hover{
@@ -46,6 +47,7 @@
 .content_card{
   width: 100%;
   height: 100%;
+  z-index: 1;
 }
 
 #contact_container{
