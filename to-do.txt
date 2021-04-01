@@ -1,2 +1,2 @@
-- Finir Atelier (Anouar)
+- Finir page atelier (Anouar)
 - Script pour l'envoi des mails (PHP ?)
