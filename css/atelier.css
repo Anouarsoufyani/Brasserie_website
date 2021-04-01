@@ -53,20 +53,16 @@
   height: 25vh;
 }
 
-#contact_btn{
-  border: 1px solid #000;
-  width: 25%;
-  padding: 5px;
-  color: black;
+.btn-contact{
+  width: 250px;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 20px;
   outline: none;
+  border: 1px solid #000;
+  color: #000;
   text-decoration: none;
-  cursor: pointer;
-  transition: 0.2s;
-}
-
-#contact_btn:hover{
-  color: white;
-  background: black;
+  transition: 0.4s
 }
 
 @media screen and (max-width: 1500px){
@@ -78,11 +74,5 @@
     height: 45vh;
     border: 1px solid;
     margin-top: 25px;
-  }
-}
-
-@media screen and (max-width: 800px){
-  #contact_btn{
-    width: 50%;
   }
 }

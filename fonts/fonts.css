@@ -24,14 +24,22 @@ html, body {
 }
 
 nav a,
-input[type="submit"] {
+input[type="submit"],
+.btn-contact {
 	font-size: 30px;
 	font-family: Alvaro;
 	letter-spacing: 2px
 }
 
+input[type="submit"]:hover,
+.btn-contact:hover {
+	background-color: #000;
+	color: #fff
+}
+
 nav a:active,
-input[type="submit"]:active {
+input[type="submit"]:active,
+.btn-contact:active {
 	-webkit-transform: scale(0.9);
 	-ms-transform: scale(0.9);
 	transform: scale(0.9);
