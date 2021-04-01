@@ -1,5 +1,2 @@
-- Page Atelier
-- Finir page Contact (Anouar)
+- Finir Atelier (Anouar)
 - Script pour l'envoi des mails (PHP ?)
-- Voir metas
-- Fonts ?
