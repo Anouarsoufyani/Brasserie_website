@@ -53,11 +53,11 @@
 			<section class="form">
 				<form method="POST" action="index.html">
 					<span class="subtitle">Une question ?</span>
-					<input type="text" name="name1" placeholder="Votre prénom">
-					<input type="text" name="name2" placeholder="Votre nom"><br>
-					<input type="mail" name="mail" placeholder="Votre e-mail">
-					<input type="tel" name="tel" placeholder="Votre numéro de téléphone"><br>
-					<textarea name="message" placeholder="Votre message"></textarea><br>
+					<input type="text" name="name1" placeholder="Prénom (requis)" required>
+					<input type="text" name="name2" placeholder="Nom (requis)" required><br>
+					<input type="mail" name="mail" placeholder="E-mail (requis)" required>
+					<input type="tel" name="tel" placeholder="Téléphone (facultatif)"><br>
+					<textarea name="message" placeholder="Message (requis)" required></textarea><br>
 					<input type="submit" name="submit" value="Envoyer" title="Envoyer">
 				</form>
 				<!-- <div class="error valid">

@@ -99,7 +99,13 @@ main {
 	}
 	.title {font-size: 35px !important}
 	.subtitle {font-size: 25px !important}
-	.description {font-size: 18px !important}
+	.links,
+	.description,
+	.workshop_info,
+	#contact_container,
+	.cards,
+	.address,
+	.contact {font-size: 18px}
 	form {
 		display: flex;
 		flex-direction: column;

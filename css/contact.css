@@ -43,6 +43,12 @@ textarea {
 	transition: 0.2s
 }
 
+input:invalid, textarea:invalid {
+	box-shadow: none;
+	background-color: rgba(237, 67, 55, 0.2);
+	border: 1px solid #ed4337
+}
+
 input[type="submit"] {
 	display: inline-block;
 	width: 200px;
