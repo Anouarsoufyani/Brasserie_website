@@ -39,7 +39,7 @@
 			<nav>
 				<a href="produits.html" title="Nos produits"><span>NOS PRODUITS</span></a>
 				<a href="atelier.html" title="Notre atelier"><span>FAITES VOTRE BIERE</span></a>
-				<a href="contact.html" title="Nous contacter"><span>NOUS CONTACTER</span></a>
+				<a href="" title="Nous contacter"><span>NOUS CONTACTER</span></a>
 			</nav>
 		</header>
 
@@ -80,7 +80,7 @@
 
 		<footer>
 			<div class="links">
-				<a href="contact.html" class="mail" title="Envoyer un mail">yannick.bonnet@free.fr</a>
+				<a href="" class="mail" title="Envoyer un mail">yannick.bonnet@free.fr</a>
 				<a href="tel:0668922080" class="phone" title="Appeler">06 68 92 20 80</a>
 				<a href="https://www.facebook.com/BrasseriedesEveques" class="fb" title="Facebook"></a>
 			</div>
