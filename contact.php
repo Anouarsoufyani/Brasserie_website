@@ -39,7 +39,7 @@
 			<nav>
 				<a href="produits.html" title="Nos produits"><span>NOS PRODUITS</span></a>
 				<a href="atelier.html" title="Notre atelier"><span>FAITES VOTRE BIERE</span></a>
-				<a href="" title="Nous contacter"><span>NOUS CONTACTER</span></a>
+				<a href="" class="active" title="Nous contacter"><span>NOUS CONTACTER</span></a>
 			</nav>
 		</header>
 

@@ -84,3 +84,8 @@ nav a {
 }
 
 nav.light a {color: #fff}
+
+nav .active {
+	background-color: #000;
+	color: #fff
+}
