@@ -1,27 +1,24 @@
-/* Alvaro Condensed */
 @font-face {
-	font-family: Alvaro;
+	font-family: Alvaro; /* Alvaro Condensed */
 	src: url(AlvaroCondensed.otf) format("opentype")
 }
 
-/* Bodoni Bold */
 @font-face {
-	font-family: Bodoni;
+	font-family: Bodoni; /* Bodoni Bold */
 	src: url(BodoniBold.ttf) format("truetype")
 }
 
-/* Roboto Slab Regular */
 @font-face {
-	font-family: "Roboto Slab";
+	font-family: "Roboto Slab"; /* Roboto Slab Regular */
 	src: url(RobotoSlabRegular.ttf) format("truetype")
 }
-
-
 
 html, body {
 	font-size: 20px;
 	font-family: "Roboto Slab"
 }
+
+/* buttons */
 
 nav a,
 input[type="submit"],
@@ -31,11 +28,14 @@ input[type="submit"],
 	letter-spacing: 2px
 }
 
-input[type="submit"]:hover,
-.btn-contact:hover {
+/* buttons hover animation */
+
+input[type="submit"]:hover, .btn-contact:hover {
 	background-color: #000;
 	color: #fff
 }
+
+/* buttons active animation */
 
 nav a:active,
 input[type="submit"]:active,
@@ -46,6 +46,8 @@ input[type="submit"]:active,
 	transition: 0.1s
 }
 
+/* inputs & textarea */
+
 input, textarea {
 	font-size: 18px;
 	font-family: "Roboto Slab"
@@ -53,8 +55,9 @@ input, textarea {
 
 ::selection {background-color: rgba(0, 0, 0, 0.2)} /* text selection */
 
-.title,
-.subtitle {
+/* titles & subtitles */
+
+.title, .subtitle {
 	display: block;
 	font-weight: normal;
 	font-family: Bodoni
@@ -70,8 +73,7 @@ input, textarea {
 	font-size: 40px
 }
 
-.title.main,
-.subtitle.main {
+.title.main, .subtitle.main {
 	display: none;
 	margin: 0;
 	padding: 0 25px
@@ -83,11 +85,26 @@ input, textarea {
 	border-bottom: 1px solid #fff
 }
 
+/* footer links */
+
+.mail, .phone {
+	color: #000;
+	text-decoration: none
+}
+
+.mail:hover, .phone:hover {color: #333}
+
+/* copyright section */
+
 .copyright {font-size: 16px}
+
+/* creators section */
+
 .creators {font-size: 12px}
 
-.logo:hover,
-.fb:hover {
+/* links hover animation */
+
+.logo:hover, .fb:hover {
 	-webkit-filter: brightness(1.2);
 	filter: brightness(1.2)
 }

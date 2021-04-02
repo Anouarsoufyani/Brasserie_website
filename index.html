@@ -15,33 +15,28 @@
 		<link rel="stylesheet" type="text/css" href="css/main.css">
 		<script type="text/javascript" src="toggle_menu.js"></script>
 		<script type="text/javascript">
-			function calc_banner_height() {
-				var h = window.innerWidth,
-					rw = (16 / h),
-					rh = (9 / rw - 10); // 10px gap between the image and the container
-				return rh
-			}
+			function calc_banner_height() {return Math.round(9 * (this.innerWidth / 16) - 10)}
 
 			window.onload = function() {
 				var header = document.querySelector("header"),
 					logo = document.querySelector(".logo"),
 					menu = document.querySelector(".menu"),
 					nav = document.querySelector("nav"),
-					workshop = document.querySelector(".workshop");
+					workshop = document.querySelector(".workshop-photo"),
+					banner_height = calc_banner_height();
 				this.onscroll = function() {
-					if (this.scrollY >= calc_banner_height()) {
+					banner_height = calc_banner_height();
+					if (this.scrollY >= banner_height) {
 						// the user has scrolled the page
-						header.style.backgroundColor = "#fff";
-						header.style.boxShadow = "0 10px 20px rgba(0, 0, 0, 0.2)";
-						logo.classList.add("extended");
+						header.classList.remove("light");
 						menu.classList.remove("light");
-						nav.classList.remove("light")
+						nav.classList.remove("light");
+						logo.classList.add("extended")
 					} else {
-						header.style.backgroundColor = "transparent";
-						header.style.boxShadow = "none";
-						logo.classList.remove("extended");
+						header.classList.add("light");
 						menu.classList.add("light");
-						nav.classList.add("light")
+						nav.classList.add("light");
+						logo.classList.remove("extended")
 					}
 				}
 				// init workshop photo
@@ -53,7 +48,7 @@
 	</head>
 
 	<body>
-		<header style="box-shadow: none; background-color: transparent">
+		<header class="light">
 			<a href="" class="logo" title="La Brasserie des Evêques"></a>
 			<a href="javascript:void(0)" class="menu light" onclick="toggle_menu(this)" title="Menu"></a>
 			<nav class="light">
@@ -83,7 +78,7 @@
 				Nous habitons sur le littoral languedocien, près de l'île de Maguelone,<br>
 				d'où un puissant évêché a rayonné pendant mille ans.
 			</p>
-			<img class="workshop">
+			<img class="workshop-photo">
 		</main>
 
 		<footer>

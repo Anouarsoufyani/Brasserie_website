@@ -10,6 +10,11 @@ header {
 	z-index: 3
 }
 
+header.light {
+	box-shadow: none;
+	background-color: transparent
+}
+
 /* logo */
 
 .logo {

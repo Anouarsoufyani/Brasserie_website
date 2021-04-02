@@ -1,3 +1,5 @@
-- Finir page atelier (Anouar)
-- Script pour l'envoi des mails (PHP ?)
-- Réparer l'API pour la map (activer le billing)
+- Script PHP envoi de mail
+- Google Maps
+- Utilité des photos ?
+- Font pour remplacer Roboto Slab ?
+- Check-out

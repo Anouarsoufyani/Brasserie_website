@@ -8,7 +8,7 @@ footer {
 	text-align: center
 }
 
-/* links section */
+/* useful links */
 
 .links {line-height: 40px}
 
@@ -19,16 +19,9 @@ footer {
 	padding: 0 20px
 }
 
-.mail, .phone {
-	color: #000;
-	text-decoration: none
-}
-
-.mail:hover, .phone:hover {text-decoration: underline}
-
 .fb {
 	height: 40px;
-	background-image: url(../img/fb.png);
+	background: url(../img/fb.png) no-repeat;
 	background-size: contain
 }
 
