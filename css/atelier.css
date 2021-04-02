@@ -18,6 +18,7 @@
 #card_container{
   justify-content: space-between;
   flex-direction: row;
+  padding-top: 25px;
 }
 
 .cards{
