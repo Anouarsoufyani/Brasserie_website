@@ -104,6 +104,7 @@
 @media screen and (max-width: 1500px){
   #card_container{
     flex-direction: column;
+    padding-top: 0;
   }
   .cards{
     width: 65%;
