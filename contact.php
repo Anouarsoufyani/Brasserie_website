@@ -51,16 +51,16 @@
 				<a href="tel:0668922080" class="phone" title="Appeler">06 68 92 20 80</a>
 			</section>
 			<section class="form">
-				<form method="POST" action="index.html">
+				<form method="POST">
 					<span class="subtitle">Une question ?</span>
 					<input type="text" name="name1" placeholder="Prénom (requis)" required>
 					<input type="text" name="name2" placeholder="Nom (requis)" required><br>
-					<input type="mail" name="mail" placeholder="E-mail (requis)" required>
+					<input type="email" name="email" placeholder="E-mail (requis)" required>
 					<input type="tel" name="tel" placeholder="Téléphone (facultatif)"><br>
 					<textarea name="message" placeholder="Message (requis)" required></textarea><br>
 					<input type="submit" name="submit" value="Envoyer" title="Envoyer">
 				</form>
-				<!-- <div class="error valid">
+				<!-- <div class="error invalid">
 					<div class="content">Votre message a bien été envoyé.</div>
 					<div class="content">Votre message n'a pas pu être envoyé.</div>
 					<button class="close" onclick="close_error(this)" title="Fermer"></button>
