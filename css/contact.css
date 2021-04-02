@@ -6,7 +6,7 @@ main {
 }
 
 .contact,
-form,
+.form,
 .maps {
 	width: 100%;
 	margin-bottom: 50px;
@@ -35,7 +35,7 @@ textarea:focus {border-color: #000}
 textarea {
 	width: 600px;
 	height: 200px;
-	margin: 30px 0;
+	margin-top: 30px;
 	padding: 10px;
 	outline: none;
 	border: 1px solid #757575;
@@ -46,6 +46,7 @@ textarea {
 input[type="submit"] {
 	display: inline-block;
 	width: 200px;
+	margin-top: 30px;
 	height: 40px;
 	padding: 0 20px;
 	border: 1px solid #000;
@@ -57,6 +58,38 @@ input[type="submit"] {
 input[type="submit"]:hover {
 	background-color: #000;
 	color: #fff
+}
+
+.error {
+	display: inline-block;
+	margin-top: 30px;
+	opacity: 1;
+	color: #fff;
+	font-size: 18px;
+	animation-duration: 0.2s
+}
+
+.error.valid {background-color: #77b255}
+.error.invalid {background-color: #ed4337}
+
+.error .content {
+	display: inline-block;
+	width: calc(100% - 100px);
+	line-height: 40px;
+	padding: 0 40px 0 20px;
+	float: left;
+	text-align: left
+}
+
+.error .close {
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	float: right;
+	border: none;
+	background: url(../img/cross.svg) center no-repeat;
+	background-size: 20px;
+	cursor: pointer
 }
 
 .maps {
