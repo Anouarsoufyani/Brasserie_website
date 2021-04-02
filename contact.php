@@ -29,7 +29,7 @@
 					marker = new google.maps.Marker({position: loc, map: map})
 			}
 		</script>
-		<title>Nous contacter • La Brasserie des Evêques</title>
+		<title>Nous contacter • La Brasserie des Evêques • Villeneuve-lès-Maguelone</title>
 	</head>
 
 	<body>
