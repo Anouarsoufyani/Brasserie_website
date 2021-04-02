@@ -10,15 +10,15 @@ header {
 
 .logo {
 	display: inline-block;
-	width: 45px; /* basic logo = 45.1px / extended logo = 92px */
+	width: 37px; /* basic logo = 37px */
 	height: 60px;
 	background: url(../img/logo.png) no-repeat;
 	background-size: contain
 }
 
 .logo.extended {
-	width: 92px;
-	background-image: url(../img/logo-extended.jpg)
+	width: 93px; /* extended logo = 93px */
+	background-image: url(../img/logo-extended.png)
 }
 
 .menu {

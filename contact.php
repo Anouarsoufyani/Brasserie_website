@@ -8,7 +8,7 @@
 		<meta name="description" content="La Brasserie des Evêques à Villeneuve-lès-Maguelone">
 		<meta name="author" content="Anouar Soufyani, Mattéo Legagneux">
 		<meta name="copyright" content="© 2021 La Brasserie des Evêques. Tous droits réservés.">
-		<link rel="icon" href="img/favicon.ico">
+		<link rel="icon" type="image/png" href="img/favicon.png">
 		<link rel="stylesheet" type="text/css" href="fonts/fonts.css">
 		<link rel="stylesheet" type="text/css" href="css/contact.css">
 		<link rel="stylesheet" type="text/css" href="css/footer.css">
@@ -47,7 +47,7 @@
 			<span class="title">Nous contacter</span>
 			<section class="contact" style="border-top: none">
 				<span class="subtitle">Coordonnées</span>
-				<a href="mailto:yannick.bonnet@free.fr" target="_blank" class="mail" title="Envoyer un mail par Gmail">yannick.bonnet@free.fr</a><br>
+				<a href="mailto:yannick.bonnet@free.fr" target="_blank" class="mail" title="Envoyer un mail via Gmail">yannick.bonnet@free.fr</a><br>
 				<a href="tel:0668922080" class="phone" title="Appeler">06 68 92 20 80</a>
 			</section>
 			<section class="form">

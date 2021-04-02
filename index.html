@@ -8,7 +8,7 @@
 		<meta name="description" content="La Brasserie des Evêques à Villeneuve-lès-Maguelone">
 		<meta name="author" content="Anouar Soufyani, Mattéo Legagneux">
 		<meta name="copyright" content="© 2021 La Brasserie des Evêques. Tous droits réservés.">
-		<link rel="icon" href="img/favicon.ico">
+		<link rel="icon" type="image/png" href="img/favicon.png">
 		<link rel="stylesheet" type="text/css" href="fonts/fonts.css">
 		<link rel="stylesheet" type="text/css" href="css/footer.css">
 		<link rel="stylesheet" type="text/css" href="css/header.css">
@@ -17,8 +17,8 @@
 		<script type="text/javascript">
 			function calc_banner_height() {
 				var h = window.innerWidth,
-					rw = (4000 / h),
-					rh = (2250 / rw - 10);
+					rw = (16 / h),
+					rh = (9 / rw - 10); // 10px gap between the image and the container
 				return rh
 			}
 
@@ -27,10 +27,7 @@
 					logo = document.querySelector(".logo"),
 					menu = document.querySelector(".menu"),
 					nav = document.querySelector("nav"),
-					banner = document.querySelector(".banner"),
 					workshop = document.querySelector(".workshop");
-				banner.style.height = calc_banner_height() + "px";
-				this.onresize = function() {banner.style.height = calc_banner_height() + "px"}
 				this.onscroll = function() {
 					if (this.scrollY >= calc_banner_height()) {
 						// the user has scrolled the page
@@ -67,8 +64,11 @@
 		</header>
 
 		<section class="banner">
-			<span class="title">La Brasserie des Evêques</span>
-			<span class="subtitle">Bières artisanales</span>
+			<img src="img/banner.jpg">
+			<div class="banner-title">
+				<span class="title">La Brasserie des Evêques</span>
+				<span class="subtitle" style="margin-bottom: 0">Bières artisanales</span>
+			</div>
 		</section>
 
 		<main style="padding-top: 50px">
