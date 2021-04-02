@@ -1,18 +1,13 @@
-main {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: space-between
-}
+/* containers */
 
-.contact,
-.form,
-.maps {
+.contact, .form, .maps {
 	width: 100%;
 	margin-bottom: 50px;
 	padding: 20px 0;
 	border-top: 1px solid #757575
 }
+
+/* inputs & textarea */
 
 input, textarea {
 	-webkit-appearance: none;
@@ -29,8 +24,7 @@ input:not([type="submit"]) {
 	transition: 0.2s
 }
 
-input:not([type="submit"]):focus,
-textarea:focus {border-color: #000}
+input:not([type="submit"]):focus, textarea:focus {border-color: #000}
 
 textarea {
 	width: 600px;
@@ -49,6 +43,8 @@ input:invalid, textarea:invalid {
 	border: 1px solid #ed4337
 }
 
+/* submit button */
+
 input[type="submit"] {
 	display: inline-block;
 	width: 200px;
@@ -66,6 +62,8 @@ input[type="submit"]:hover {
 	color: #fff
 }
 
+/* mail status message */
+
 .error {
 	display: inline-block;
 	margin-top: 30px;
@@ -76,6 +74,7 @@ input[type="submit"]:hover {
 }
 
 .error.valid {background-color: #77b255}
+
 .error.invalid {background-color: #ed4337}
 
 .error .content {
@@ -97,6 +96,8 @@ input[type="submit"]:hover {
 	background-size: 20px;
 	cursor: pointer
 }
+
+/* Google Maps section */
 
 .maps {
 	display: flex;

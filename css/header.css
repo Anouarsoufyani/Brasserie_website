@@ -1,3 +1,5 @@
+/* header */
+
 header {
 	width: 100%;
 	height: 60px;
@@ -7,6 +9,8 @@ header {
 	transition: 0.2s;
 	z-index: 3
 }
+
+/* logo */
 
 .logo {
 	display: inline-block;
@@ -20,6 +24,8 @@ header {
 	width: 93px; /* extended logo = 93px */
 	background-image: url(../img/logo-extended.png)
 }
+
+/* menu button (only for small screens) */
 
 .menu {
 	visibility: hidden;
@@ -42,6 +48,8 @@ header {
 
 .menu.opened {background-image: url(../img/cross.svg)}
 
+/* nav section */
+
 nav {
 	display: inline-block;
 	height: 60px;
@@ -55,6 +63,8 @@ nav.opened {
 	visibility: visible;
 	opacity: 1
 }
+
+/* nav links */
 
 nav a {
 	display: inline-block;

@@ -3,6 +3,8 @@ body {
 	background-color: #fff
 }
 
+/* banner (only index) */
+
 .banner {
 	position: relative;
 	background: url(../img/banner.jpg) fixed;
@@ -28,6 +30,8 @@ body {
 	text-align: center
 }
 
+/* main container (all pages) */
+
 main {
 	display: flex;
 	flex-direction: column;
@@ -40,19 +44,17 @@ main {
 	font-size: 20px
 }
 
+/* workshop photo (only index) */
+
 .workshop {
 	width: 50%;
 	margin-top: 20px
 }
 
-
-
 @keyframes fade_out {
 	from {opacity: 1}
 	to {opacity: 0}
 }
-
-
 
 @media screen and (min-width: 801px) {
 	/* nav button animation */
@@ -126,10 +128,8 @@ main {
 	.error {width: 90%}
 }
 
-
-
 /*
-	Old colors
+	old colors:
 	#634b4a
 	#4f3c3b (#634b4a with rgba(0, 0, 0, 0.2))
 */
