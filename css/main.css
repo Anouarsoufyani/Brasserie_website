@@ -76,10 +76,12 @@ main {
 	nav a:hover {color: #fff}
 	nav a:hover:after {width: 100%}
 }
+
 @media screen and (max-width: 1000px) {
 	.workshop-photo {width: 65% !important}
 	#map {width: 100%}
 }
+
 @media screen and (max-width: 800px) {
 	.menu {visibility: visible}
 	nav {
@@ -119,7 +121,9 @@ main {
 	}
 	#map {height: 300px}
 }
+
 @media screen and (max-width: 700px) {.workshop-photo {width: 100% !important}}
+
 @media screen and (max-width: 500px) {
 	main {padding: 100px 0 50px 0}
 	.banner span {display: none}
