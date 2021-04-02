@@ -11,7 +11,7 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  border-top: 1px solid;
+  border-top: 1px solid #757575;
   margin-top: 25px;
 }
 
@@ -25,6 +25,7 @@
   position: relative;
   width: 30%;
   height: 50vh;
+  border: 0.5px solid #757575;
 }
 
 .title_card{
