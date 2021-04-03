@@ -60,6 +60,13 @@
 					<textarea name="message" placeholder="Message (requis)" required></textarea><br>
 					<input type="submit" name="submit" value="Envoyer" title="Envoyer">
 				</form>
+
+				<?php
+					$message = $_POST['message'];
+					$message = wordwrap($message,70);
+					$sender = $_POST['email'];
+					mail("yannick.bonnet@free.fr","Brasserie Message",$message, "From : " . $sender);
+				?>
 				<!-- <div class="error invalid">
 					<div class="content">Votre message a bien été envoyé.</div>
 					<div class="content">Votre message n'a pas pu être envoyé.</div>
