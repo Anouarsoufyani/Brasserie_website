@@ -1,9 +1,6 @@
-body {
-	margin: 0;
-	background-color: #fff
-}
+body {margin: 0}
 
-/* banner (only index) */
+/* banner section (only index) */
 
 .banner {
 	position: relative;
@@ -11,9 +8,8 @@ body {
 	background-size: 100%
 }
 
-.banner img {
+.banner-layer {
 	display: block;
-	visibility: hidden;
 	width: 100%
 }
 
@@ -21,13 +17,12 @@ body {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	align-items: center;
 	width: 100%;
 	height: 100%;
-	margin: auto;
 	top: 0;
 	position: absolute;
-	color: #fff;
-	text-align: center
+	color: #fff
 }
 
 /* main container (all pages) */
@@ -39,7 +34,7 @@ main {
 	justify-content: center;
 	position: relative;
 	padding: 100px 50px 50px 50px;
-	box-shadow: 0 -20px 40px rgba(0, 0, 0, 0.5); /* top box shadow */
+	box-shadow: 0 -20px 40px rgba(0, 0, 0, 0.5); /* box shadow on the banner */
 	text-align: center;
 	font-size: 20px
 }
@@ -47,8 +42,15 @@ main {
 /* workshop photo (only index) */
 
 .workshop-photo {
-	width: 50%;
+	width: 40%;
 	margin-top: 20px
+}
+
+/* blurred photos */
+
+.blurred {
+	-webkit-filter: blur(10px);
+	filter: blur(10px)
 }
 
 /* keyframes */
@@ -61,14 +63,14 @@ main {
 /* media queries */
 
 @media screen and (min-width: 801px) {
-	/* nav button animation */
+	/* nav buttons hover animation */
 	nav a:after {
 		content: "";
 		width: 0;
 		height: 100%;
 		right: 0;
 		position: absolute;
-		transition: 0.5s
+		transition-duration: 0.5s
 	}
 	nav.light a:after {background-color: #fff}
 	nav a:after {background-color: #000}
@@ -81,9 +83,21 @@ main {
 	nav a:hover:after {width: 100%}
 }
 
+@media screen and (max-width: 1400px) {
+	.card {width: 800px !important}
+	.list {width: 400px !important}
+}
+
 @media screen and (max-width: 1000px) {
-	.workshop-photo {width: 65% !important}
+	.title {font-size: 45px}
+	.description {padding: 0 25px}
+	.workshop-photo {width: 50%}
 	#map {width: 100%}
+}
+
+@media screen and (max-width: 900px) {
+	.card {width: 100% !important}
+	.list {width: 100% !important}
 }
 
 @media screen and (max-width: 800px) {
@@ -105,15 +119,17 @@ main {
 		background-color: #fff;
 		color: #000 !important
 	}
-	.title {font-size: 35px !important}
-	.subtitle {font-size: 25px !important}
+	.title {font-size: 35px}
+	.subtitle {font-size: 25px}
 	.links,
 	.description,
 	.workshop_info,
-	#contact_container,
+	.card,
+	.interest,
 	.cards,
 	.address,
 	.contact {font-size: 18px}
+	.workshop-photo {width: 70%}
 	form {
 		display: flex;
 		flex-direction: column;
@@ -126,12 +142,15 @@ main {
 	#map {height: 300px}
 }
 
-@media screen and (max-width: 700px) {.workshop-photo {width: 100% !important}}
+@media screen and (max-width: 700px) {.workshop-photo {width: 90%}}
+
+@media screen and (max-width: 600px) {.formula {width: 100% !important}}
 
 @media screen and (max-width: 500px) {
 	main {padding: 100px 0 50px 0}
-	.banner span {display: none}
-	.title.main, .subtitle.main {display: block}
+	.banner-title {display: none}
+	.main-title {display: block}
 	.item {margin: 20px 0 !important}
 	.error {width: 90%}
+	.workshop-photo {width: 100%}
 }

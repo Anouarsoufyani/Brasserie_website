@@ -21,7 +21,7 @@ input:not([type="submit"]) {
 	padding: 10px;
 	outline: none;
 	border: 1px solid #757575;
-	transition: 0.2s
+	transition-duration: 0.2s
 }
 
 input:not([type="submit"]):focus, textarea:focus {border-color: #000}
@@ -34,7 +34,7 @@ textarea {
 	outline: none;
 	border: 1px solid #757575;
 	resize: none;
-	transition: 0.2s
+	transition-duration: 0.2s
 }
 
 input:invalid, textarea:invalid {
@@ -54,7 +54,7 @@ input[type="submit"] {
 	border: 1px solid #000;
 	background-color: inherit;
 	cursor: pointer;
-	transition: 0.4s
+	transition-duration: 0.4s
 }
 
 input[type="submit"]:hover {

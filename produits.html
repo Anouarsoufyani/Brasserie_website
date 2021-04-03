@@ -14,22 +14,38 @@
 		<link rel="stylesheet" type="text/css" href="css/header.css">
 		<link rel="stylesheet" type="text/css" href="css/main.css">
 		<link rel="stylesheet" type="text/css" href="css/products.css">
-		<script type="text/javascript" src="toggle_menu.js"></script>
+		<script type="text/javascript" src="js/animate_header.js"></script>
+		<script type="text/javascript" src="js/toggle_menu.js"></script>
 		<script type="text/javascript">
-			window.onload = function() {
+			window.addEventListener("load", function() {
 				var amber = document.querySelector(".amber .photo"),
 					blond = document.querySelector(".blond .photo"),
 					brown = document.querySelector(".brown .photo");
+
+				animate_header();
+				this.onscroll = animate_header;
+
 				// init amber beer photo
-				amber.src = "img/amber-small.webp";
-				amber.onload = function() {this.src = "img/amber.jpg"}
+				amber.src = "img/amber-small.jpg";
+				amber.onload = function() {
+					this.src = "img/amber.jpg";
+					this.classList.remove("blurred")
+				}
+
 				// init blond beer photo
-				blond.src = "img/blond-small.webp";
-				blond.onload = function() {this.src = "img/blond.jpg"}
+				blond.src = "img/blond-small.jpg";
+				blond.onload = function() {
+					this.src = "img/blond.jpg";
+					this.classList.remove("blurred")
+				}
+
 				// init brown beer photo
-				brown.src = "img/brown-small.webp";
-				brown.onload = function() {this.src = "img/brown.jpg"}
-			}
+				brown.src = "img/brown-small.jpg";
+				brown.onload = function() {
+					this.src = "img/brown.jpg";
+					this.classList.remove("blurred")
+				}
+			})
 		</script>
 		<title>Nos produits • La Brasserie des Evêques • Villeneuve-lès-Maguelone</title>
 	</head>
@@ -49,7 +65,7 @@
 			<span class="title">Nos bières</span>
 			<div class="products">
 				<div class="item amber">
-					<img class="photo">
+					<img class="photo blurred">
 					<span class="subtitle color">AMBREE</span>
 					<ul class="info">
 						<li>33 cl et 75 cl</li>
@@ -63,7 +79,7 @@
 					</ul>
 				</div>
 				<div class="item blond">
-					<img class="photo">
+					<img class="photo blurred">
 					<span class="subtitle color">BLONDE</span>
 					<ul class="info">
 						<li>33 cl et 75 cl</li>
@@ -77,7 +93,7 @@
 					</ul>
 				</div>
 				<div class="item brown">
-					<img class="photo">
+					<img class="photo blurred">
 					<span class="subtitle color">BRUNE</span>
 					<ul class="info">
 						<li>33 cl et 75 cl</li>
@@ -95,9 +111,9 @@
 
 		<footer>
 			<div class="links">
-				<a href="contact.php" class="mail" title="Envoyer un mail">yannick.bonnet@free.fr</a>
+				<a href="mailto:yannick.bonnet@free.fr" class="mail" title="Envoyer un mail via Gmail">yannick.bonnet@free.fr</a>
 				<a href="tel:0668922080" class="phone" title="Appeler">06 68 92 20 80</a>
-				<a href="https://www.facebook.com/BrasseriedesEveques" class="fb" title="Facebook"></a>
+				<a href="https://www.facebook.com/BrasseriedesEveques" target="_blank" rel="noopener norefferer" class="fb" title="Facebook"></a>
 			</div>
 			<span class="copyright">© 2021 La Brasserie des Evêques. Tous droits réservés.</span>
 			<span class="creators">Conception du site : Anouar Soufyani et Mattéo Legagneux</span>

@@ -13,35 +13,34 @@
 		<link rel="stylesheet" type="text/css" href="css/footer.css">
 		<link rel="stylesheet" type="text/css" href="css/header.css">
 		<link rel="stylesheet" type="text/css" href="css/main.css">
-		<script type="text/javascript" src="toggle_menu.js"></script>
+		<script type="text/javascript" src="js/toggle_menu.js"></script>
 		<script type="text/javascript">
 			function calc_banner_height() {return Math.round(9 * (this.innerWidth / 16) - 10)}
 
 			window.onload = function() {
 				var header = document.querySelector("header"),
-					logo = document.querySelector(".logo"),
 					menu = document.querySelector(".menu"),
 					nav = document.querySelector("nav"),
-					workshop = document.querySelector(".workshop-photo"),
+					logo = document.querySelector(".logo"),
 					banner_height = calc_banner_height();
+
 				this.onscroll = function() {
 					banner_height = calc_banner_height();
-					if (this.scrollY >= banner_height) {
-						// the user has scrolled the page
-						header.classList.remove("light");
-						menu.classList.remove("light");
-						nav.classList.remove("light");
-						logo.classList.add("extended")
-					} else {
+					if (this.scrollY < banner_height) {
+						// top of the page
+						header.style.boxShadow = "none";
 						header.classList.add("light");
 						menu.classList.add("light");
 						nav.classList.add("light");
 						logo.classList.remove("extended")
+					} else {
+						header.style.boxShadow = "0 10px 20px rgba(0, 0, 0, 0.2)";
+						header.classList.remove("light");
+						menu.classList.remove("light");
+						nav.classList.remove("light");
+						logo.classList.add("extended")
 					}
 				}
-				// init workshop photo
-				workshop.src = "img/workshop-small.webp";
-				workshop.onload = function() {this.src = "img/workshop.jpg"}
 			}
 		</script>
 		<title>Accueil • La Brasserie des Evêques • Villeneuve-lès-Maguelone</title>
@@ -59,33 +58,33 @@
 		</header>
 
 		<section class="banner">
-			<img src="img/banner.jpg">
+			<img src="img/banner-layer.png" class="banner-layer">
 			<div class="banner-title">
 				<span class="title">La Brasserie des Evêques</span>
-				<span class="subtitle" style="margin-bottom: 0">Bières artisanales</span>
+				<span class="subtitle">Bières artisanales</span>
 			</div>
 		</section>
 
 		<main style="padding-top: 50px">
-			<span class="title main">La Brasserie des Evêques</span>
-			<span class="subtitle main">Bières artisanales</span>
+			<div class="main-title">
+				<span class="title">La Brasserie des Evêques</span>
+				<span class="subtitle">Bières artisanales</span>
+			</div>
 			<span class="title">Bienvenue</span>
-			<p class="description" style="padding: 0 25px">
+			<p class="description">
 				En quelques années, les pionniers du brassage maison ont su donner une âme à la bière.<br><br>
-				L'eau, le malt, le houblon sont devenus sources d'inspiration et d'expérimentations<br>
-				de brasseurs passionnés. Saveurs, arômes et robes se déclinent à l'infini.<br>
+				L'eau, le malt, le houblon sont devenus sources d'inspiration et d'expérimentations de brasseurs passionnés. Saveurs, arômes et robes se déclinent à l'infini.<br>
 				Les bières de terroir sont nées. Les nôtres sont maritimes.<br>
-				Nous habitons sur le littoral languedocien, près de l'île de Maguelone,<br>
-				d'où un puissant évêché a rayonné pendant mille ans.
+				Nous habitons sur le littoral languedocien, près de l'île de Maguelone, d'où un puissant évêché a rayonné pendant mille ans.
 			</p>
-			<img class="workshop-photo">
+			<img src="img/workshop.jpg" class="workshop-photo">
 		</main>
 
 		<footer>
 			<div class="links">
-				<a href="contact.php" class="mail" title="Envoyer un mail">yannick.bonnet@free.fr</a>
+				<a href="mailto:yannick.bonnet@free.fr" class="mail" title="Envoyer un mail via Gmail">yannick.bonnet@free.fr</a>
 				<a href="tel:0668922080" class="phone" title="Appeler">06 68 92 20 80</a>
-				<a href="https://www.facebook.com/BrasseriedesEveques" class="fb" title="Facebook"></a>
+				<a href="https://www.facebook.com/BrasseriedesEveques" target="_blank" rel="noopener norefferer" class="fb" title="Facebook"></a>
 			</div>
 			<span class="copyright">© 2021 La Brasserie des Evêques. Tous droits réservés.</span>
 			<span class="creators">Conception du site : Anouar Soufyani et Mattéo Legagneux</span>

@@ -43,7 +43,7 @@ input[type="submit"]:active,
 	-webkit-transform: scale(0.9);
 	-ms-transform: scale(0.9);
 	transform: scale(0.9);
-	transition: 0.1s
+	transition-duration: 0.1s
 }
 
 /* inputs & textarea */
@@ -57,33 +57,44 @@ input, textarea {
 
 /* titles & subtitles */
 
-.title, .subtitle {
+.title,
+.subtitle,
+.card-title,
+.price {
 	display: block;
+	margin-bottom: 20px;
 	font-weight: normal;
 	font-family: Bodoni
 }
 
-.title {
-	margin-bottom: 20px;
-	font-size: 60px
-}
+.title {font-size: 55px}
 
-.subtitle {
-	margin-bottom: 20px;
-	font-size: 40px
-}
+.subtitle, .card-title {font-size: 35px}
 
-.title.main, .subtitle.main {
+.price {font-size: 25px}
+
+.banner-title .subtitle {margin-bottom: 0}
+
+.main-title {
 	display: none;
-	margin: 0;
 	padding: 0 25px
 }
 
-.subtitle.main {
+.main-title .subtitle {
 	padding-bottom: 40px;
 	margin-bottom: 40px;
-	border-bottom: 1px solid #fff
+	border-bottom: 1px solid #757575
 }
+
+/* description (only index) */
+
+.description {padding: 0 20%}
+
+/* list items */
+
+.info li {padding-top: 20px}
+
+.list li, .list-large li {padding-top: 2px}
 
 /* footer links */
 

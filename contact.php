@@ -14,7 +14,8 @@
 		<link rel="stylesheet" type="text/css" href="css/footer.css">
 		<link rel="stylesheet" type="text/css" href="css/header.css">
 		<link rel="stylesheet" type="text/css" href="css/main.css">
-		<script type="text/javascript" src="toggle_menu.js"></script>
+		<script type="text/javascript" src="js/animate_header.js"></script>
+		<script type="text/javascript" src="js/toggle_menu.js"></script>
 		<script type="text/javascript">
 			function close_error(btn) {
 				var parent = btn.parentNode;
@@ -27,6 +28,11 @@
 				const loc = {lat: 0, lng: 0},
 					map = new google.maps.Map(document.getElementById("map"), {zoom: 4, center: loc}),
 					marker = new google.maps.Marker({position: loc, map: map})
+			}
+
+			window.onload = function() {
+				animate_header();
+				this.onscroll = animate_header
 			}
 		</script>
 		<title>Nous contacter • La Brasserie des Evêques • Villeneuve-lès-Maguelone</title>
@@ -47,31 +53,26 @@
 			<span class="title">Nous contacter</span>
 			<section class="contact" style="border-top: none">
 				<span class="subtitle">Coordonnées</span>
-				<a href="mailto:yannick.bonnet@free.fr" target="_blank" class="mail" title="Envoyer un mail via Gmail">yannick.bonnet@free.fr</a><br>
+				<a href="mailto:yannick.bonnet@free.fr" class="mail" title="Envoyer un mail via Gmail">yannick.bonnet@free.fr</a><br>
 				<a href="tel:0668922080" class="phone" title="Appeler">06 68 92 20 80</a>
 			</section>
 			<section class="form">
 				<form method="POST">
 					<span class="subtitle">Une question ?</span>
-					<input type="text" name="name1" placeholder="Prénom (requis)" required>
-					<input type="text" name="name2" placeholder="Nom (requis)" required><br>
+					<input type="text" name="first_name" placeholder="Prénom (requis)" required>
+					<input type="text" name="last_name" placeholder="Nom (requis)" required><br>
 					<input type="email" name="email" placeholder="E-mail (requis)" required>
 					<input type="tel" name="tel" placeholder="Téléphone (facultatif)"><br>
 					<textarea name="message" placeholder="Message (requis)" required></textarea><br>
 					<input type="submit" name="submit" value="Envoyer" title="Envoyer">
 				</form>
-
 				<?php
-					$message = $_POST['message'];
-					$message = wordwrap($message,70);
-					$sender = $_POST['email'] . " " . $_POST['tel'];
-					mail("yannick.bonnet@free.fr","Brasserie Message",$message, "From : " . $sender);
+					if (!empty($_POST["submit"])) {
+						$send = mail("matteoo34@icloud.com", "La Brasserie des Evêques", $_POST["message"], "From: " . $_POST["email"]);
+						if ($send) echo "<div class='error valid'><div class='content'>Votre message a bien été envoyé.</div><button class='close' onclick='close_error(this)' title='Fermer'></button></div>";
+						else echo "<div class='error invalid'><div class='content'>Votre message n'a pas pu être envoyé.</div><button class='close' onclick='close_error(this)' title='Fermer'></button></div>";
+					}
 				?>
-				<!-- <div class="error invalid">
-					<div class="content">Votre message a bien été envoyé.</div>
-					<div class="content">Votre message n'a pas pu être envoyé.</div>
-					<button class="close" onclick="close_error(this)" title="Fermer"></button>
-				</div> -->
 			</section>
 			<section class="maps" style="margin-bottom: 0">
 				<span class="subtitle">Nous trouver</span>
@@ -87,9 +88,9 @@
 
 		<footer>
 			<div class="links">
-				<a href="" class="mail" title="Envoyer un mail">yannick.bonnet@free.fr</a>
+				<a href="mailto:yannick.bonnet@free.fr" class="mail" title="Envoyer un mail via Gmail">yannick.bonnet@free.fr</a>
 				<a href="tel:0668922080" class="phone" title="Appeler">06 68 92 20 80</a>
-				<a href="https://www.facebook.com/BrasseriedesEveques" class="fb" title="Facebook"></a>
+				<a href="https://www.facebook.com/BrasseriedesEveques" target="_blank" rel="noopener norefferer" class="fb" title="Facebook"></a>
 			</div>
 			<span class="copyright">© 2021 La Brasserie des Evêques. Tous droits réservés.</span>
 			<span class="creators">Conception du site : Anouar Soufyani et Mattéo Legagneux</span>

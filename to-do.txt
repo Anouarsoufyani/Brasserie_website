@@ -1,5 +1,0 @@
-- Script PHP envoi de mail
-- Google Maps
-- Utilité des photos ?
-- Font pour remplacer Roboto Slab ?
-- Check-out

@@ -9,10 +9,14 @@
 	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2)
 }
 
-.photo {width: 100%}
+.photo {
+	width: 100%;
+	transition-duration: 0.4s
+}
 
 .color {
 	display: block;
+	margin-top: 20px;
 	border-top: 1px solid #000;
 	border-bottom: 1px solid #000;
 	font-size: 30px
@@ -23,5 +27,3 @@
 	text-align: left;
 	font-size: 18px
 }
-
-.info li {padding-top: 20px}
