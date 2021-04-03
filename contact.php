@@ -64,7 +64,7 @@
 				<?php
 					$message = $_POST['message'];
 					$message = wordwrap($message,70);
-					$sender = $_POST['email'];
+					$sender = $_POST['email'] . " " . $_POST['tel'];
 					mail("yannick.bonnet@free.fr","Brasserie Message",$message, "From : " . $sender);
 				?>
 				<!-- <div class="error invalid">
