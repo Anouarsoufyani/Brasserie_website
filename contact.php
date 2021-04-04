@@ -63,7 +63,13 @@
 				</form>
 				<?php
 					if (!empty($_POST["submit"])) {
-						$send = mail("matteoo34@icloud.com", "La Brasserie des Evêques", $_POST["message"], "From: " . $_POST["email"]);
+						$msg = $_POST["message"] . "\n" . "Téléphone : " . $_POST["tel"];
+						$from = $_POST["first_name"] . " " . $_POST["last_name"] . " (" . $_POST["email"] . ")";
+						$send = mail(
+							"yannick.bonnet@free.fr",
+							"La Brasserie des Evêques",
+							$msg,
+							"De " . $from);
 						if ($send) echo "<div class='error valid'><div class='content'>Votre message a bien été envoyé.</div><button class='close' onclick='close_error(this)' title='Fermer'></button></div>";
 						else echo "<div class='error invalid'><div class='content'>Votre message n'a pas pu être envoyé.</div><button class='close' onclick='close_error(this)' title='Fermer'></button></div>";
 					}
