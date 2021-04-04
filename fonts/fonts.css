@@ -86,9 +86,9 @@ input, textarea {
 	border-bottom: 1px solid #757575
 }
 
-/* description (only index) */
+/* paragraphs */
 
-.description {padding: 0 20%}
+main > p {padding: 0 20%}
 
 /* list items */
 
@@ -96,14 +96,19 @@ input, textarea {
 
 .list li, .list-large li {padding-top: 2px}
 
-/* footer links */
+/* links */
 
-.mail, .phone {
+p a {color: #000}
+
+.mail,
+.phone {
 	color: #000;
 	text-decoration: none
 }
 
-.mail:hover, .phone:hover {color: #333}
+p a:hover,
+.mail:hover,
+.phone:hover {color: #333}
 
 /* copyright section */
 
@@ -115,7 +120,8 @@ input, textarea {
 
 /* links hover animation */
 
-.logo:hover, .fb:hover {
+.logo:hover,
+.fb:hover {
 	-webkit-filter: brightness(1.2);
 	filter: brightness(1.2)
 }

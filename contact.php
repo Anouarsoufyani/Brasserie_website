@@ -24,12 +24,6 @@
 				setTimeout(function() {parent.style.display = "none"}, 200)
 			}
 
-			function initMap() {
-				const loc = {lat: 0, lng: 0},
-					map = new google.maps.Map(document.getElementById("map"), {zoom: 4, center: loc}),
-					marker = new google.maps.Marker({position: loc, map: map})
-			}
-
 			window.onload = function() {
 				animate_header();
 				this.onscroll = animate_header
@@ -53,6 +47,7 @@
 			<span class="title">Nous contacter</span>
 			<section class="contact" style="border-top: none">
 				<span class="subtitle">Coordonnées</span>
+				Yannick Bonnet<br>
 				<a href="mailto:yannick.bonnet@free.fr" class="mail" title="Envoyer un mail via Gmail">yannick.bonnet@free.fr</a><br>
 				<a href="tel:0668922080" class="phone" title="Appeler">06 68 92 20 80</a>
 			</section>
@@ -81,8 +76,7 @@
 					Villeneuve-lès-Maguelone<br>
 					34750
 				</span>
-				<div id="map"></div>
-				<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAqgG7ZhqEnLmF59diS7RLhu2wrxbTFLhM&callback=initMap&libraries=&v=weekly" async></script>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2892.368981082355!2d3.860306515493945!3d43.53634987912545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12b6b105fc04181b%3A0xab422ac69453757e!2sLa%20Brasserie%20des%20%C3%89v%C3%AAques!5e0!3m2!1sfr!2sfr!4v1617533972849!5m2!1sfr!2sfr" id="map" allowfullscreen="" loading="lazy"></iframe>
 			</section>
 		</main>
 

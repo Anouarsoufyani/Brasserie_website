@@ -27,24 +27,15 @@
 
 				// init amber beer photo
 				amber.src = "img/amber-small.jpg";
-				amber.onload = function() {
-					this.src = "img/amber.jpg";
-					this.classList.remove("blurred")
-				}
+				amber.onload = function() {this.src = "img/amber.jpg"}
 
 				// init blond beer photo
 				blond.src = "img/blond-small.jpg";
-				blond.onload = function() {
-					this.src = "img/blond.jpg";
-					this.classList.remove("blurred")
-				}
+				blond.onload = function() {this.src = "img/blond.jpg"}
 
 				// init brown beer photo
 				brown.src = "img/brown-small.jpg";
-				brown.onload = function() {
-					this.src = "img/brown.jpg";
-					this.classList.remove("blurred")
-				}
+				brown.onload = function() {this.src = "img/brown.jpg"}
 			})
 		</script>
 		<title>Nos produits • La Brasserie des Evêques • Villeneuve-lès-Maguelone</title>
@@ -63,9 +54,9 @@
 
 		<main>
 			<span class="title">Nos bières</span>
-			<div class="products">
+			<section class="products">
 				<div class="item amber">
-					<img class="photo blurred">
+					<img class="photo">
 					<span class="subtitle color">AMBREE</span>
 					<ul class="info">
 						<li>33 cl et 75 cl</li>
@@ -79,7 +70,7 @@
 					</ul>
 				</div>
 				<div class="item blond">
-					<img class="photo blurred">
+					<img class="photo">
 					<span class="subtitle color">BLONDE</span>
 					<ul class="info">
 						<li>33 cl et 75 cl</li>
@@ -93,7 +84,7 @@
 					</ul>
 				</div>
 				<div class="item brown">
-					<img class="photo blurred">
+					<img class="photo">
 					<span class="subtitle color">BRUNE</span>
 					<ul class="info">
 						<li>33 cl et 75 cl</li>
@@ -106,7 +97,7 @@
 						<li>Arômes boisés, chocolat, épices et pointe de cannelle</li>
 					</ul>
 				</div>
-			</div>
+			</section>
 		</main>
 
 		<footer>
